@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider .slick-next {
+  right: 50px;
+  z-index: 1;
+}
+
+.slider .slick-prev {
+  left: 50px;
+  z-index: 1;
+}
+
+.slick-arrow::before {
+  font-size: 35px !important;
+  color: black !important;
+}
+
+
+/* .slider .slick-prev{
+     left: 100px;
+     z-index:1;
+   }
+   .slider .slick-prev::before{
+    font-size: 35px;
+    color: black;
+   }
+   
+  .slider .slick-next:before{
+    font-size: 35px;
+    color: black;
+   } */
