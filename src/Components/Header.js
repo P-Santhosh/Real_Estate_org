@@ -54,98 +54,77 @@ class Header extends React.Component {
 }
 
 export default Header;*/
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import React from "react";
+import { Link } from "react-router-dom";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, sempadapalayam",
   addressTwo: "Tamil Nadu 639001",
   contactOne: "94426-93171",
   contactTwo: "97890-63333",
-  copyright:"Copyright 2021 © Thogai Murugan Builders",
-  allrights:"All Rights Reserved",
-  kts:"With love of Karur Tech Solution",
-  ktsLink:"@karurtech.com",
-  home:"Home",
-  about:"About Us",
-  projects:"Projects",
-  blogs:"Blogs",
-  gallery:"Gallery",
-  contact:" Contact",
-
+  copyright: "Copyright 2021 © Thogai Murugan Builders",
+  allrights: "All Rights Reserved",
+  kts: "With love of Karur Tech Solution",
+  ktsLink: "@karurtech.com",
+  home: "Home",
+  about: "About Us",
+  projects: "Projects",
+  blogs: "Blogs",
+  gallery: "Gallery",
+  contact: " Contact",
 };
 const Header = ({ toggle }) => {
   return (
-    
-    <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
-    <nav
-      className='flex justify-between items-center h-24 bg-white text-black relative shadow-lg lg:pl-24 lg:pr-24  text-lg sticky'
-      role='navigation'
-    >
-      <Link to='/' className='pl-8  '>
-      <img 
-                        alt="..."
-                        className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/logo.jpg"
-                      />
-      </Link>
-      <div className='px-4 cursor-pointer md:hidden' onClick={toggle}>
-        <svg
-          className='w-8 h-8'
-          fill='none'
-          stroke='currentColor'
-          viewBox='0 0 24 24'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth='2'
-            d='M4 6h16M4 12h16M4 18h16'
+    <IntlProvider messages={messagesInFrench} defaultLocale="en">
+      <nav
+        className="flex justify-between items-center h-24 bg-white text-black relative shadow-lg lg:pl-24 lg:pr-24  text-lg sticky"
+        role="navigation"
+      >
+        <Link to="/" className="pl-8  ">
+          <img
+            alt="..."
+            className="align-middle border-none max-w-full h-auto rounded-lg"
+            src="/img/logo.jpg"
           />
-        </svg>
-      </div>
-      <div className='pr-8 md:block  hidden '>
-        
-        <Link  to='/' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id="home "
-                defaultMessage="Home "
-              /> 
         </Link>
-        <Link to='/about' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id="about "
-                defaultMessage="About Us "
-              />
-        </Link>
-        <Link to='/projects' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id="projects"
-                defaultMessage="Projects "
-              />
-        </Link>
-        <Link to='/blogs' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id="blogs"
-                defaultMessage="Blogs "
-              />
-        </Link>
-        <Link to='/gallery' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id="gallery"
-                defaultMessage="Gallery"
-              />
-        </Link>
-        <Link to='/contact' className='p-4 hover:text-red-600'>
-        <FormattedMessage
-                id=" contact"
-                defaultMessage=" Contact"
-              />
-        </Link>
-      </div>
-    </nav>
+        <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <div className="pr-8 md:block  hidden ">
+          <Link to="/" className="p-4 hover:text-red-600">
+            <FormattedMessage id="home " defaultMessage="Home " />
+          </Link>
+          <Link to="/about" className="p-4 hover:text-red-600">
+            <FormattedMessage id="about " defaultMessage="About Us " />
+          </Link>
+          <Link to="/projects" className="p-4 hover:text-red-600">
+            <FormattedMessage id="projects" defaultMessage="Projects " />
+          </Link>
+          <Link to="/blogs" className="p-4 hover:text-red-600">
+            <FormattedMessage id="blogs" defaultMessage="Blogs " />
+          </Link>
+          <Link to="/gallery" className="p-4 hover:text-red-600">
+            <FormattedMessage id="gallery" defaultMessage="Gallery" />
+          </Link>
+          <Link to="/contact" className="p-4 hover:text-red-600">
+            <FormattedMessage id=" contact" defaultMessage=" Contact" />
+          </Link>
+        </div>
+      </nav>
     </IntlProvider>
   );
 };

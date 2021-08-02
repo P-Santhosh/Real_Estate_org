@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
   founderGoal:
@@ -44,10 +44,9 @@ const messagesInFrench = {
 const Content = () => {
   return (
     <>
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
-        {" "}
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <section>
-          <div className="text-center pt-12 pb-12 lg:px-20">
+          <div className="text-center pt-12 lg:pb-12 lg:px-20">
             <h5 className="text-xl font-bold">
               <FormattedMessage
                 id=" founderHead"
@@ -61,9 +60,9 @@ const Content = () => {
               />
             </p>
             <hr></hr>
-            <div className="lg:flex pt-8">
+            <div className="lg:flex lg:pt-8 " >
               <div className="lg:w-2/4 ">
-                <div className=" lg:pl-48 pt-6">
+                <div className=" lg:pl-48 lg:px-1 px-16 lg:pt-6">
                   <img
                     alt="..."
                     className="align-middle border-none max-w-full h-auto rounded-lg"
@@ -83,7 +82,7 @@ const Content = () => {
                   />
                 </p>
               </div>
-              <div className="text-justify pt-12 lg:w-2/4 md:pl-12 lg:pr-48 p-6">
+              <div className="text-justify pt-12 lg:w-2/4 md:pl-12 lg:pr-48 p-6 ">
                 <b>
                   <FormattedMessage
                     id=" visionHead"
@@ -101,8 +100,8 @@ const Content = () => {
                 <div className=" py-6 ">
                   <Link
                     to="/about"
-                    className="rounded-full border-4 px-12 py-2 font-bold
-      text-sm bg-blue-400 border-blue-600"
+                    className="rounded-full border-4 px-20   py-2 font-bold
+      text-sm bg-blue-400 border-blue-600 "
                   >
                     <FormattedMessage
                       id=" readMore"
@@ -114,7 +113,7 @@ const Content = () => {
             </div>
           </div>
         </section>
-        <div className="text-center pt-12 pb-12 lg:px-20 ">
+        <div className="text-center lg:pt-12 lg:pb-12 lg:px-20 ">
           <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
             <FormattedMessage
               id=" projectsHead"
@@ -123,7 +122,7 @@ const Content = () => {
           </h5>
         </div>
         <section>
-          <div className="lg:flex py-12 ">
+          <div className="lg:flex lg:py-12 ">
             <div className="lg:w-2/4 ">
               <div className=" lg:pl-56">
                 <img
@@ -138,7 +137,7 @@ const Content = () => {
                 <FormattedMessage
                   id=" projectsOngoing"
                   defaultMessage="OUR ONGOING PROJECTS"
-                />{" "}
+                />
               </b>
 
               <hr></hr>
@@ -153,11 +152,11 @@ const Content = () => {
                to government agencies, large corporations and private bodies.'
                 />
               </p>
-              <div className=" py-6 ">
+              <div className=" py-6   ">
                 <Link
                   to="/projects"
                   className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-4 py-1"
+                  px-20   py-1"
                 >
                   <FormattedMessage id=" viewAll" defaultMessage="View All ➜" />
                 </Link>
@@ -166,14 +165,14 @@ const Content = () => {
           </div>
         </section>
         <section>
-          <div className="lg:flex py-6 lg:pb-16">
+          <div className="lg:flex lg:py-6 lg:pb-16">
             <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56 lg:pt-16">
+              <div className="text-justify lg:pl-56 lg:pt-16 lg:px-0 px-6">
                 <b>
                   <FormattedMessage
                     id=" projectsCompleted"
                     defaultMessage="OUR COMPLETED PROJECTS"
-                  />{" "}
+                  />
                 </b>
                 <hr></hr>
                 <p>
@@ -187,11 +186,11 @@ const Content = () => {
                to government agencies, large corporations and private bodies.'
                   />
                 </p>
-                <div className=" py-6 ">
+                <div className=" py-6  ">
                   <Link
                     to="/projects"
                     className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-4 py-1 "
+                   px-20  py-1 "
                   >
                     <FormattedMessage
                       id=" viewAll"
@@ -347,10 +346,10 @@ const Content = () => {
               />
             </h5>
           </div>
-          <div className="lg:flex mt-20 mb-6">
+          <div className="lg:flex lg:mt-20  mt-6 mb-6">
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/kgf.png"
@@ -361,7 +360,7 @@ const Content = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/kts.jpeg"
@@ -370,9 +369,9 @@ const Content = () => {
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-6/12 lg:w-3/12  px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/finestreet.jpg"
@@ -383,7 +382,7 @@ const Content = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/banner.jpg"
@@ -394,7 +393,7 @@ const Content = () => {
             </div>
           </div>
         </section>
-        <div className="text-center pt-12 pb-12 lg:px-20 ">
+        <div className="text-center lg:pt-12 pt-1 pb-12 lg:px-20 ">
           <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
             <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
           </h5>
@@ -447,7 +446,7 @@ const Content = () => {
                 </form>
               </div>
             </div>
-            <div className="text-justify pt-2 lg:w-2/4 md:pl-12 lg:pr-48 ">
+            <div className="text-justify lg:pt-2 pt-6 lg:w-2/4 lg:pr-48 ">
               <img
                 alt="..."
                 src="/img/banner.jpg"
@@ -482,7 +481,7 @@ const Content = () => {
                   />{" "}
                 </p>
                 <p className="mb-2">
-                  {" "}
+                 
                   <FormattedMessage
                     id="addressTwo"
                     defaultMessage="Tamil Nadu 639001 "
@@ -504,11 +503,11 @@ const Content = () => {
                   />
                 </svg>
                 <p className="mb-2">
-                  {" "}
+                 
                   <FormattedMessage
                     id="contactOne"
                     defaultMessage="94426-93171 "
-                  />{" "}
+                  />
                 </p>
                 <p className="mb-2">
                   <FormattedMessage

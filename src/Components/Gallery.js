@@ -16,6 +16,30 @@ const Gallery = () => {
 
 export default Gallery;*/
 import * as React from 'react'
+import {IntlProvider, FormattedMessage} from 'react-intl'
+//import Footer from './Footer'
+
+// Translated messages in French with matching IDs to what you declared
+const messagesInFrench = {
+  myMessage: "HELLo",
+}
+
+export default function Gallery() {
+  return (
+    <IntlProvider messages={messagesInFrench}  defaultLocale="en">
+      <p>
+        <FormattedMessage
+          id="myMessage"
+          defaultMessage="Heloo"
+          
+        />
+        <br />
+        
+      </p>
+    </IntlProvider>
+  )
+}
+/*import * as React from 'react'
 import {IntlProvider, FormattedMessage, FormattedNumber} from 'react-intl'
 import Footer from './Footer'
 
@@ -38,4 +62,4 @@ export default function Gallery() {
       </p>
     </IntlProvider>
   )
-}
+}*/

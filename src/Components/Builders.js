@@ -1,12 +1,12 @@
-import React from 'react';
-import Footer from './Footer'
+import React from "react";
+import Footer from "./Footer";
 
 const Builders = () => {
   return (
     <>
-    <p className="p-32"> Builders</p>
-    
-    <Footer></Footer>
+      <p className="p-32"> Builders</p>
+
+      <Footer></Footer>
     </>
   );
 };

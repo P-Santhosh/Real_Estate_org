@@ -3,37 +3,36 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Banner() {
-const settings = {
-/* dots: true,
+  const settings = {
+    /* dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1*/
 
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true
-
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
   };
   return (
     <div className="slider m-0 p-0">
       <Slider {...settings}>
-          <div>
-            <img  className="w-full max-h-screen" src="/img/demo1.jpg"  alt=""/>
-          </div>
-          <div>
-            <img className="w-full max-h-screen" src="/img/demo.jpg" alt=""/>
-          </div>
-          <div>
-            <img  className="w-full max-h-screen" src="/img/demo2.jpg" alt=""/>
-          </div>
-          <div>
-            <img  className="w-full max-h-screen"src="/img/demo3.jpg" alt="" />
-          </div>
-        </Slider>
+        <div>
+          <img className="w-full max-h-screen" src="/img/demo1.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/demo.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/demo2.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/demo3.jpg" alt="" />
+        </div>
+      </Slider>
     </div>
   );
 }

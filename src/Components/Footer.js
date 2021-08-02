@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, sempadapalayam",
@@ -21,14 +21,14 @@ const messagesInFrench = {
 class Footer extends React.Component {
   render() {
     return (
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
-        <footer className="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 text-blue-900 pt-10 lg:p-12 text-center">
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
+        <footer className="bg-blue-900 text-white pt-10 lg:p-12 text-center">
           <section className="lg:py-12">
             <div className="lg:flex lg:mt-2 mb-6 px-12">
               <div className="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 ">
                 <div className="px-6">
-                  <a href="https://karurtech.com/" target="_blank">
-                    <img
+                  <a href="https://karurtech.com/"  target="_blank ">
+                    <img 
                       alt="..."
                       src="/img/banner.jpg"
                       className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
@@ -146,15 +146,15 @@ class Footer extends React.Component {
                 defaultMessage="All Rights Reserved "
               />
             </p>
-            <a href="https://karurtech.com/" target="_blank">
+            <a href="https://karurtech.com/" target="blank">
               <FormattedMessage
                 id="kts"
                 defaultMessage="With love of Karur Tech Solution  "
               />
-              <span className="text-black">
+              <span >
                 <FormattedMessage
                   id="ktsLink"
-                  defaultMessage="@karurtech.com "
+                  defaultMessage=" @karurtech.com "
                 />
               </span>
             </a>

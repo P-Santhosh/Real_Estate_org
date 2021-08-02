@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Components/Footer";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, sempadapalayam",
@@ -11,7 +11,7 @@ const messagesInFrench = {
 const Contact = () => {
   return (
     <>
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <p></p>
         <div className=" lg:pl-40  lg:p-24  lg:flex h-full rounded mb-20  lg:pt-24  ">
           <img
@@ -41,14 +41,19 @@ const Contact = () => {
                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
               />
             </svg>
-            <p className="mb-2"><FormattedMessage
+            <p className="mb-2">
+              <FormattedMessage
                 id="addressOne"
                 defaultMessage="18, Kadai Veedhi, sempadapalayam "
-              /></p>
-            <p className="mb-2"> <FormattedMessage
+              />
+            </p>
+            <p className="mb-2">
+              {" "}
+              <FormattedMessage
                 id="addressTwo"
                 defaultMessage="Tamil Nadu 639001 "
-              /></p>
+              />
+            </p>
 
             <svg
               className="w-6 h-6"
@@ -64,14 +69,12 @@ const Contact = () => {
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            <p className="mb-2"><FormattedMessage
-                id="contactOne"
-                defaultMessage="94426-93171 "
-              /> </p>
-            <p className="mb-2"><FormattedMessage
-                id="contactTwo"
-                defaultMessage="97890-63333 "
-              /></p>
+            <p className="mb-2">
+              <FormattedMessage id="contactOne" defaultMessage="94426-93171 " />{" "}
+            </p>
+            <p className="mb-2">
+              <FormattedMessage id="contactTwo" defaultMessage="97890-63333 " />
+            </p>
           </div>
         </div>
         <p>

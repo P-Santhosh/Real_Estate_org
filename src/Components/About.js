@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
   founderGoal:
@@ -42,9 +42,9 @@ const messagesInFrench = {
 const About = () => {
   return (
     <>
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
-        <div className="text-center pt-12 pb-12 px-20">
-          <h5 className="text-2xl font-bold p-3  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 ">
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
+        <div className="text-center pt-12 pb-12 lg:px-20 ">
+          <h5 className="lg:text-2xl text-xl font-bold p-3  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 ">
             <FormattedMessage
               id=" founderHead"
               defaultMessage=" FOUNDER OF THOGAI MURUGAN BUILDERS"
@@ -60,7 +60,7 @@ const About = () => {
           <hr />
           <div className="lg:flex">
             <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56">
+              <div className=" lg:pl-56 lg:px-1 px-12">
                 <img
                   alt="..."
                   className="align-middle border-none max-w-full h-auto rounded-lg"
@@ -81,7 +81,7 @@ const About = () => {
               </p>
             </div>
             <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56">
+              <div className=" lg:pl-56 lg:px-1 px-12">
                 <img
                   alt="..."
                   className="align-middle border-none max-w-full h-auto rounded-lg "
@@ -92,7 +92,7 @@ const About = () => {
                 <FormattedMessage
                   id=" ceoName"
                   defaultMessage="Santhose Murugan "
-                />{" "}
+                />
               </b>
               <p>
                 <FormattedMessage
@@ -187,7 +187,7 @@ const About = () => {
                     <FormattedMessage
                       id="bnameOne"
                       defaultMessage="Shri.Thogai Murugan "
-                    />{" "}
+                    />
                   </h5>
                   <p className="mt-1  text-blueGray-400 uppercase font-semibold">
                     <FormattedMessage
@@ -295,10 +295,10 @@ const About = () => {
               />
             </h5>
           </div>
-          <div className="lg:flex mt-20 mb-6">
+          <div className="lg:flex lg:mt-20  mt-6 mb-6">
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/"  target="blank">
                   <img
                     alt="..."
                     src="/img/kgf.png"
@@ -309,7 +309,7 @@ const About = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/kts.jpeg"
@@ -320,7 +320,7 @@ const About = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/finestreet.jpg"
@@ -331,7 +331,7 @@ const About = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="_blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/banner.jpg"

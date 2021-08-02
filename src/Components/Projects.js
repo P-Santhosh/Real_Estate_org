@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   avenuesHead: "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES",
@@ -26,7 +26,7 @@ const messagesInFrench = {
 const Projects = () => {
   return (
     <>
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <div>
           <div className="text-center pt-6 pb-12 lg:px-20 ">
             <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
@@ -35,7 +35,7 @@ const Projects = () => {
                 defaultMessage="THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES "
               />
             </h5>
-            <div className="text-xl p-5">
+            <div className="text-xl p-5 ">
               <b>
                 <FormattedMessage
                   id="ongoingProjects"
@@ -47,11 +47,12 @@ const Projects = () => {
           </div>
           <section>
             <div className="lg:flex lg:py-6">
-              <div className="px-20 lg:pl-40 ">
+              <div className=" px-20 lg:pl-40 ">
+                <div className="card shadow-md bg-blue-50 hover:shadow-2xl p-2 pb-3">
                 <Link to="/sembadapalayam">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto  hover:shadow-2xl "
+                    className="align-middle border-none max-w-full h-auto   "
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -78,8 +79,9 @@ const Projects = () => {
                     />
                   </Link>
                 </div>
+                </div>
               </div>
-              <div className="px-20 lg:pr-40  lg:pt-0 pt-6">
+              <div className="px-20 lg:pr-40  lg:pt-0 pt-16">
                 <Link to="/arthanaripalayam">
                   <img
                     alt="..."
@@ -117,7 +119,7 @@ const Projects = () => {
             </div>
           </section>
           <section>
-            <div className="lg:flex lg:pt-16 pt-6 lg:pb-12 ">
+            <div className="lg:flex lg:pt-16 pt-16 lg:pb-12 ">
               <div className="px-20 lg:pl-40 ">
                 <Link to="/pattasukadi">
                   <img
@@ -153,7 +155,7 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="px-20 lg:pr-40 lg:pt-0 pt-6">
+              <div className="px-20 lg:pr-40 lg:pt-0 pt-16">
                 <Link to="/munnur">
                   <img
                     alt="..."
@@ -191,8 +193,8 @@ const Projects = () => {
             </div>
           </section>
           <section>
-            <div className="lg:flex py-6">
-              <div className="px-20 lg:pl-40 ">
+            <div className="lg:flex lg:py-6">
+              <div className="px-20 lg:pl-40 lg:pt-0 pt-16 ">
                 <Link to="/nanaparappu">
                   <img
                     alt="..."
@@ -227,7 +229,7 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="px-20 lg:pr-40 lg:pt-0 pt-6">
+              <div className="px-20 lg:pr-40 lg:pt-0 pt-16">
                 <Link to="/aravakurichi">
                   <img
                     alt="..."
@@ -264,13 +266,13 @@ const Projects = () => {
               </div>
             </div>
           </section>
-          <div className="text-center pt-6  lg:px-20 ">
+          <div className="text-center lg:pt-6 pt-16  lg:px-20 ">
             <div className="text-xl p-5">
               <b>
                 <FormattedMessage
                   id="completedProjects"
                   defaultMessage="COMPLETED PROJECTS "
-                />{" "}
+                />
               </b>
             </div>
             <hr></hr>
@@ -290,7 +292,7 @@ const Projects = () => {
                   />
                 </p>
               </div>
-              <div className="px-20 lg:pr-40">
+              <div className="px-20 lg:pr-40 lg:pt-0 pt-12 lg:pb-0 pb-6">
                 <img
                   alt="..."
                   className="align-middle border-none max-w-full h-auto hover:shadow-2xl "

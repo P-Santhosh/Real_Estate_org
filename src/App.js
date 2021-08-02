@@ -19,16 +19,12 @@ class App extends React.Component {
 export default App;*/
 import React, { useState, useEffect } from "react";
 import Header from "./Components/Header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
-import Footer from "./Components/Footer";
 import Dropdown from "./Components/Dropdown";
-import Content from "./Components/Content";
-import Banner from "./Components/Banner";
-import Builders from "./Components/Builders";
 import Blogs from "./Components/Blogs";
 import Gallery from "./Components/Gallery";
 import Sembadapalayam from "./Components/Sembadapalayam";

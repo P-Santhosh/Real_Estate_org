@@ -1,33 +1,39 @@
 import React from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
-import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   aravaiHead:
     "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES @ Aravakurichi, Karur ",
   propertyDetails: "PROPERTY DETAILS",
-  propertyAddress:" PROPERTY ADDRESS",
-  address:"Address :",
-  city:"City :",
-  state:"State :",
-  aravaiAddressone:"Aravakurichi, Karur",
-  aravaiAddresstwo:"",
-  aravaiCity:"Karur",
-  aravaiState:"Tamilnadu",
-  propertySpecifications:" PROPERTY DETAILS & SPECIFICATIONS",
-  propertyId:"Property Id :",
-  nofPlots:"No of Plots:",
-  typesofPlots:"Type of Plots :",
-  idValue:"Thogai Murugan Avenue",
-  aravaiNofplots:"184",
-  aravaiTypesofplots:"Normal flats & EWS Flats",
-  propertyFeatures:"PROPERTY FEATURES",
+  propertyAddress: " PROPERTY ADDRESS",
+  address: "Address :",
+  city: "City :",
+  state: "State :",
+  aravaiAddressone: "Aravakurichi, Karur",
+  aravaiAddresstwo: "",
+  aravaiCity: "Karur",
+  aravaiState: "Tamilnadu",
+  propertySpecifications: " PROPERTY DETAILS & SPECIFICATIONS",
+  propertyId: "Property Id :",
+  nofPlots: "No of Plots:",
+  typesofPlots: "Type of Plots :",
+  idValue: "Thogai Murugan Avenue",
+  aravaiNofplots: "184",
+  aravaiTypesofplots: "Normal flats & EWS Flats",
+  propertyFeatures: "PROPERTY FEATURES",
   contactUs: "CONTACT US",
+  submit: "Submit",
+  featureRoad: "Bitumen road",
+  featureDraiange: "Drainage for all roads",
+  featureLights: "Street Lights",
+  featurePark: "Park facilities",
+  featureDtcp: "DTCP approval for all flats",
 };
 const Aravakurichi = () => {
   return (
     <>
-      <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
+      <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <div className="text-center pt-12 pb-10 lg:px-20 ">
           <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
             <FormattedMessage
@@ -47,96 +53,127 @@ const Aravakurichi = () => {
                 />
               </p>
               <p className="text-xl font-bold mt-1 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
-              <FormattedMessage
+                <FormattedMessage
                   id="propertyAddress"
                   defaultMessage="PROPERTY ADDRESS "
                 />
               </p>
               <div className="lg:px-80 py-2 text-base py-5">
                 <p>
-                  <span className="font-semibold"><FormattedMessage
-                  id="address"
-                  defaultMessage="Address :"
-                /> </span>
-                  <span><FormattedMessage
-                  id="aravaiAddressone"
-                  defaultMessage="Aravakurichi, Karur"
-                />  </span>
+                  <span className="font-semibold">
+                    <FormattedMessage id="address" defaultMessage="Address :" />{" "}
+                  </span>
+                  <span>
+                    <FormattedMessage
+                      id="aravaiAddressone"
+                      defaultMessage="Aravakurichi, Karur"
+                    />{" "}
+                  </span>
                 </p>
                 <p>
-                  <span className="font-semibold "><FormattedMessage
-                  id="city"
-                  defaultMessage="City :"
-                /> </span> <FormattedMessage
-                id="aravaiCity"
-                defaultMessage="Karur"
-              /> 
+                  <span className="font-semibold ">
+                    <FormattedMessage id="city" defaultMessage="City :" />{" "}
+                  </span>{" "}
+                  <FormattedMessage id="aravaiCity" defaultMessage="Karur" />
                 </p>
                 <p>
-                  <span className="font-semibold"><FormattedMessage
-                  id="state"
-                  defaultMessage="State :"
-                /> </span> <FormattedMessage
-                id="aravaiState"
-                defaultMessage="Tamilnadu"
-              /> 
+                  <span className="font-semibold">
+                    <FormattedMessage id="state" defaultMessage="State :" />{" "}
+                  </span>{" "}
+                  <FormattedMessage
+                    id="aravaiState"
+                    defaultMessage="Tamilnadu"
+                  />
                 </p>
               </div>
               <p className="text-xl font-bold mt-1 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
-              <FormattedMessage
+                <FormattedMessage
                   id="propertySpecifications"
                   defaultMessage="PROPERTY DETAILS & SPECIFICATIONS "
-                /> 
+                />
               </p>
               <div className="lg:px-80 py-2 text-base py-5">
                 <p>
-                  <span className="font-semibold"><FormattedMessage
-                  id="propertyId"
-                  defaultMessage="Property Id :"
-                /> </span>
-                  <span> <FormattedMessage
-                  id="idValue"
-                  defaultMessage=" Thogai Murugan Avenue"
-                /></span>
+                  <span className="font-semibold">
+                    <FormattedMessage
+                      id="propertyId"
+                      defaultMessage="Property Id :"
+                    />{" "}
+                  </span>
+                  <span>
+                    {" "}
+                    <FormattedMessage
+                      id="idValue"
+                      defaultMessage=" Thogai Murugan Avenue"
+                    />
+                  </span>
                 </p>
                 <p>
-                  <span className="font-semibold"><FormattedMessage
-                  id="nofPlots"
-                  defaultMessage="No of Plots:"
-                />  </span> <FormattedMessage
-                id="aravaiNofplots"
-                defaultMessage=" 184"
-              /> 
+                  <span className="font-semibold">
+                    <FormattedMessage
+                      id="nofPlots"
+                      defaultMessage="No of Plots:"
+                    />{" "}
+                  </span>{" "}
+                  <FormattedMessage id="aravaiNofplots" defaultMessage=" 184" />
                 </p>
                 <p>
-                  <span className="font-semibold"><FormattedMessage
-                  id="typesofPlots:"
-                  defaultMessage="Type of Plots :"
-                /></span><FormattedMessage
-                id="aravaiTypesofplots"
-                defaultMessage=" Normal flats & EWS Flats"
-              /> 
+                  <span className="font-semibold">
+                    <FormattedMessage
+                      id="typesofPlots:"
+                      defaultMessage="Type of Plots :"
+                    />
+                  </span>
+                  <FormattedMessage
+                    id="aravaiTypesofplots"
+                    defaultMessage=" Normal flats & EWS Flats"
+                  />
                 </p>
               </div>
               <p className="text-xl font-bold mt-1 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
-              <FormattedMessage
+                <FormattedMessage
                   id="propertyFeatures"
                   defaultMessage="PROPERTY FEATURES"
                 />
               </p>
               <div className="lg:px-80 py-2 text-base py-5">
                 <ul>
-                  <li className="list-disc">Bitumen road</li>
-                  <li className="list-disc">Drainage for all roads</li>
-                  <li className="list-disc">Street Lights</li>
-                  <li className="list-disc">Park facilities</li>
-                  <li className="list-disc">DTCP approval for all flats</li>
+                  <li className="list-disc">
+                    <FormattedMessage
+                      id="featureRoad"
+                      defaultMessage="Bitumen road"
+                    />
+                  </li>
+                  <li className="list-disc">
+                    <FormattedMessage
+                      id="featureDraiange"
+                      defaultMessage="Drainage for all roads"
+                    />
+                  </li>
+                  <li className="list-disc">
+                    <FormattedMessage
+                      id="featureLights"
+                      defaultMessage="Street Lights"
+                    />
+                  </li>
+                  <li className="list-disc">
+                    <FormattedMessage
+                      id="featurePark"
+                      defaultMessage="Park facilities"
+                    />
+                  </li>
+                  <li className="list-disc">
+                    <FormattedMessage
+                      id="featureDtcp"
+                      defaultMessage="DTCP approval for all flats"
+                    />
+                  </li>
                 </ul>
               </div>
             </div>
             <div className="lg:w-1/4 px-3 lg:pt-10">
               <p className="text-xl font-bold  text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
-              <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
+                <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
               </p>
               <form className="px-3 mt-12">
                 <label>
@@ -174,7 +211,10 @@ const Aravakurichi = () => {
                   className="rounded-full border-4 lg:px-16 px-6 py-2 font-bold
       text-sm bg-blue-400 border-blue-600 w-3/4 mt-5 lg:mt-16 lg:ml-8"
                 >
-                  <b>Submit</b>
+                  <b>
+                    {" "}
+                    <FormattedMessage id="submit" defaultMessage="Submit" />
+                  </b>
                 </button>
                 <br />
               </form>
