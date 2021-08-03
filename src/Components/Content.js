@@ -393,7 +393,7 @@ const Content = () => {
             </div>
           </div>
         </section>
-        <div className="text-center lg:pt-12 pt-1 pb-12 lg:px-20 ">
+        <div className="text-center lg:pt-12 pt-1 pb-3 lg:px-20 ">
           <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
             <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
           </h5>
@@ -446,13 +446,13 @@ const Content = () => {
                 </form>
               </div>
             </div>
-            <div className="text-justify lg:pt-2 pt-6 lg:w-2/4 lg:pr-48 ">
+            <div className="text-justify lg:pt-2 pt-6 lg:w-2/4 lg:pr-56 ">
               <img
                 alt="..."
                 src="/img/banner.jpg"
                 className="shadow-lg  mx-auto w-2/4 hover:shadow-2xl"
               />
-              <div className="lg:pl-32  px-20 lg:pt-2  pt-5">
+              <div className="lg:pl-32  px-20 lg:pt-6  pt-5">
                 <b className="text-xl ">
                   <FormattedMessage
                     id="name"

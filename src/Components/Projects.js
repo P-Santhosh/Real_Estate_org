@@ -48,7 +48,7 @@ const Projects = () => {
           <section>
             <div className="lg:flex lg:py-6">
               <div className=" px-20 lg:pl-40 ">
-                <div className="card shadow-md bg-blue-50 hover:shadow-2xl p-2 pb-3">
+                <div className="transform hover:scale-110 card shadow-md bg-blue-50 hover:shadow-2xl  pb-6">
                 <Link to="/sembadapalayam">
                   <img
                     alt="..."
