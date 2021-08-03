@@ -35,7 +35,7 @@ const Projects = () => {
                 defaultMessage="THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES "
               />
             </h5>
-            <div className="text-xl p-5 ">
+            <div className="text-xl p-5   ">
               <b>
                 <FormattedMessage
                   id="ongoingProjects"

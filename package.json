@@ -1,4 +1,5 @@
 {
+  "homepage":"http://P-Santhosh.github.io/Real_Estate_org",
   "name": "tailwindcss-projects",
   "version": "0.1.0",
   "private": true,
@@ -46,7 +47,7 @@
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "autoprefixer": "^9.8.6",
     "gh": "^2.8.9",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "pages": "0.0.16",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"

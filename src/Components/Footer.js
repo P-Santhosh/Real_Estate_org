@@ -22,7 +22,7 @@ class Footer extends React.Component {
   render() {
     return (
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-        <footer className="bg-blue-900 text-white pt-10 lg:p-12 text-center">
+        <footer className=" bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 text-blue-900  pt-10 lg:p-12 text-center">
           <section className="lg:py-12">
             <div className="lg:flex lg:mt-2 mb-6 px-12">
               <div className="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 ">
