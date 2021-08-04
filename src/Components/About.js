@@ -51,7 +51,7 @@ const About = () => {
             />
           </h5>
 
-          <p className="py-5">
+          <p className="py-5 lg:px-0 px-3">
             <FormattedMessage
               id=" founderGoal"
               defaultMessage="Achievements become routine if dreams are backed by the desire to reach them."

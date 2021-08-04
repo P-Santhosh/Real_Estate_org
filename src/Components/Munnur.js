@@ -193,7 +193,7 @@ const Munnur = () => {
                   <input
                     type="text"
                     placeholder=" Name *"
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2 "
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2 "
                   />
                 </label>
                 <br />
@@ -201,7 +201,7 @@ const Munnur = () => {
                   <input
                     type="email"
                     placeholder=" Email "
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
                   />
                 </label>
                 <br />
@@ -209,13 +209,13 @@ const Munnur = () => {
                   <input
                     type="text"
                     placeholder=" Phone Number *"
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
                   />
                 </label>
                 <br />
                 <label>
                   <textarea
-                    class="form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
+                    class="rounded form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
                     rows="6"
                     placeholder="Message"
                   ></textarea>

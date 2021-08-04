@@ -46,7 +46,7 @@ const Content = () => {
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <section>
-          <div className="text-center pt-12 lg:pb-12 lg:px-20">
+          <div className="text-center pt-12 lg:pb-12 lg:px-20 px-3">
             <h5 className="text-xl font-bold">
               <FormattedMessage
                 id=" founderHead"
@@ -97,11 +97,11 @@ const Content = () => {
                 Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.'
                   />
                 </p>
-                <div className=" py-6 ">
+                <div className=" py-6  ">
                   <Link
                     to="/about"
                     className="rounded-full border-4 px-20   py-2 font-bold
-      text-sm bg-blue-400 border-blue-600 "
+      text-sm bg-blue-400 border-blue-600   "
                   >
                     <FormattedMessage
                       id=" readMore"
@@ -238,7 +238,7 @@ const Content = () => {
                     <FormattedMessage
                       id="bnameOne"
                       defaultMessage="Shri.Thogai Murugan "
-                    />{" "}
+                    />
                   </h5>
                   <p className="mt-1  text-blueGray-400 uppercase font-semibold">
                     <FormattedMessage
@@ -280,7 +280,7 @@ const Content = () => {
                   className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
                 />
                 <div className="pt-6 text-center">
-                  <h5 className=" font-bold text-center">
+                  <h5 className=" font-bold">
                     <FormattedMessage
                       id="bnameThree"
                       defaultMessage="Santhose Murugan "
@@ -349,7 +349,7 @@ const Content = () => {
           <div className="lg:flex lg:mt-20  mt-6 mb-6">
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
+                <a href="https://karurtech.com/"  target="blank">
                   <img
                     alt="..."
                     src="/img/kgf.png"
@@ -369,7 +369,7 @@ const Content = () => {
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12  px-4">
+            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
                 <a href="https://karurtech.com/" target="blank">
                   <img
@@ -407,7 +407,7 @@ const Content = () => {
                     <input
                       type="text"
                       placeholder=" Name *"
-                      className=" border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
@@ -415,7 +415,7 @@ const Content = () => {
                     <input
                       type="email"
                       placeholder="Email "
-                      className=" border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
@@ -423,13 +423,13 @@ const Content = () => {
                     <input
                       type="text"
                       placeholder=" Phone Number *"
-                      className=" border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
                   <label>
                     <textarea
-                      class="form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block w-3/4"
+                      class=" rounded form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block w-3/4"
                       rows="4"
                       placeholder="Message"
                     ></textarea>

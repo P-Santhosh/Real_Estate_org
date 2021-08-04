@@ -61,25 +61,25 @@ const Aravakurichi = () => {
               <div className="lg:px-80 py-2 text-base py-5">
                 <p>
                   <span className="font-semibold">
-                    <FormattedMessage id="address" defaultMessage="Address :" />{" "}
+                    <FormattedMessage id="address" defaultMessage="Address :" />
                   </span>
                   <span>
                     <FormattedMessage
                       id="aravaiAddressone"
                       defaultMessage="Aravakurichi, Karur"
-                    />{" "}
+                    />
                   </span>
                 </p>
                 <p>
                   <span className="font-semibold ">
-                    <FormattedMessage id="city" defaultMessage="City :" />{" "}
-                  </span>{" "}
+                    <FormattedMessage id="city" defaultMessage="City :" />
+                  </span>
                   <FormattedMessage id="aravaiCity" defaultMessage="Karur" />
                 </p>
                 <p>
                   <span className="font-semibold">
-                    <FormattedMessage id="state" defaultMessage="State :" />{" "}
-                  </span>{" "}
+                    <FormattedMessage id="state" defaultMessage="State :" />
+                  </span>
                   <FormattedMessage
                     id="aravaiState"
                     defaultMessage="Tamilnadu"
@@ -98,10 +98,10 @@ const Aravakurichi = () => {
                     <FormattedMessage
                       id="propertyId"
                       defaultMessage="Property Id :"
-                    />{" "}
+                    />
                   </span>
                   <span>
-                    {" "}
+                   
                     <FormattedMessage
                       id="idValue"
                       defaultMessage=" Thogai Murugan Avenue"
@@ -113,8 +113,8 @@ const Aravakurichi = () => {
                     <FormattedMessage
                       id="nofPlots"
                       defaultMessage="No of Plots:"
-                    />{" "}
-                  </span>{" "}
+                    />
+                  </span>
                   <FormattedMessage id="aravaiNofplots" defaultMessage=" 184" />
                 </p>
                 <p>
@@ -180,7 +180,7 @@ const Aravakurichi = () => {
                   <input
                     type="text"
                     placeholder=" Name *"
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2 "
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2 "
                   />
                 </label>
                 <br />
@@ -188,7 +188,7 @@ const Aravakurichi = () => {
                   <input
                     type="email"
                     placeholder=" Email "
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
                   />
                 </label>
                 <br />
@@ -196,13 +196,13 @@ const Aravakurichi = () => {
                   <input
                     type="text"
                     placeholder=" Phone Number *"
-                    className=" border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600 lg:px-16 px-6 mb-4 p-2"
                   />
                 </label>
                 <br />
                 <label>
                   <textarea
-                    class="form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
+                    class="rounded form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
                     rows="6"
                     placeholder="Message"
                   ></textarea>
@@ -212,7 +212,7 @@ const Aravakurichi = () => {
       text-sm bg-blue-400 border-blue-600 w-3/4 mt-5 lg:mt-16 lg:ml-8"
                 >
                   <b>
-                    {" "}
+                   
                     <FormattedMessage id="submit" defaultMessage="Submit" />
                   </b>
                 </button>

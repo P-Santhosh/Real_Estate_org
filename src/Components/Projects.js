@@ -45,10 +45,12 @@ const Projects = () => {
             </div>
             <hr></hr>
           </div>
+              
+
           <section>
             <div className="lg:flex lg:py-6">
               <div className=" px-20 lg:pl-40 ">
-                <div className="transform hover:scale-110 card shadow-md bg-blue-50 hover:shadow-2xl  pb-6">
+                <div >
                 <Link to="/sembadapalayam">
                   <img
                     alt="..."

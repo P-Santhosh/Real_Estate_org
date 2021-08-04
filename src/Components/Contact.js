@@ -3,8 +3,9 @@ import Footer from "../Components/Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
-  addressOne: "18, Kadai Veedhi, sempadapalayam",
-  addressTwo: "Tamil Nadu 639001",
+  addressOne: "18, Kadai Veedhi, ",
+  addressTwo: "sempadapalayam, Karur",
+  addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
   contactTwo: "97890-63333",
 };
@@ -13,7 +14,7 @@ const Contact = () => {
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <p></p>
-        <div className=" lg:pl-40  lg:p-24  lg:flex h-full rounded mb-20  lg:pt-24  ">
+        <div className=" lg:pl-40  lg:p-24  lg:flex h-full rounded mb-20  lg:pt-24 px-12  ">
           <img
             alt="..."
             className="align-middle border-none max-w-full h-auto rounded-lg sm:pl-32 "
@@ -27,6 +28,7 @@ const Contact = () => {
                 defaultMessage="Thogai Murugan Builders"
               />
             </h2>
+            <div className="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -38,23 +40,31 @@ const Contact = () => {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
             <p className="mb-2">
               <FormattedMessage
                 id="addressOne"
-                defaultMessage="18, Kadai Veedhi, sempadapalayam "
+                defaultMessage="18, Kadai Veedhi,  "
+              />
+            </p>
+            </div>
+            <p className="mb-2">
+              
+              <FormattedMessage
+                id="addressTwo"
+                defaultMessage="sempadapalayam, Karur "
               />
             </p>
             <p className="mb-2">
-              {" "}
+              
               <FormattedMessage
-                id="addressTwo"
+                id="addressThree"
                 defaultMessage="Tamil Nadu 639001 "
               />
             </p>
-
+            <div className="flex">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -69,12 +79,13 @@ const Contact = () => {
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            <p className="mb-2">
-              <FormattedMessage id="contactOne" defaultMessage="94426-93171 " />{" "}
+            <p className="mb-2  ">
+              <FormattedMessage id="contactOne" defaultMessage="94426-93171 " />
             </p>
             <p className="mb-2">
               <FormattedMessage id="contactTwo" defaultMessage="97890-63333 " />
             </p>
+            </div>
           </div>
         </div>
         <p>
