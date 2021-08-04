@@ -280,7 +280,7 @@ const Content = () => {
                   className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
                 />
                 <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
+                  <h5 className=" font-bold text-center">
                     <FormattedMessage
                       id="bnameThree"
                       defaultMessage="Santhose Murugan "
