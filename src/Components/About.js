@@ -298,7 +298,7 @@ const About = () => {
           <div className="lg:flex lg:mt-20  mt-6 mb-6">
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
               <div className="px-6">
-                <a href="https://karurtech.com/"  target="blank">
+                <a href="https://karurtech.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/kgf.png"

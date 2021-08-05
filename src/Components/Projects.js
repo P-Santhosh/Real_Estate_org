@@ -45,42 +45,44 @@ const Projects = () => {
             </div>
             <hr></hr>
           </div>
-              
 
           <section>
             <div className="lg:flex lg:py-6">
               <div className=" px-20 lg:pl-40 ">
-                <div >
-                <Link to="/sembadapalayam">
-                  <img
-                    alt="..."
-                    className="align-middle border-none max-w-full h-auto   "
-                    src="/img/demo1.jpg"
-                  />
-                </Link>
-                <Link to="/sembadapalayam">
-                  <p className="pt-5 font-bold text-center text-2xl hover:text-blue-700">
-                    <FormattedMessage
-                      id="siteSemone"
-                      defaultMessage="Sempadapalayam, Punjai Pugalur "
-                    />
-                  </p>
-                  <p className="lg:pt-5 font-bold text-center text-2xl hover:text-blue-700">
-                    <FormattedMessage id="siteSemtwo" defaultMessage="Karur " />
-                  </p>
-                </Link>
-                <div className="mt-5 text-center">
-                  <Link
-                    to="/sembadapalayam"
-                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-6 py-1  "
-                  >
-                    <FormattedMessage
-                      id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                <div>
+                  <Link to="/sembadapalayam">
+                    <img
+                      alt="..."
+                      className="align-middle border-none max-w-full h-auto   "
+                      src="/img/demo1.jpg"
                     />
                   </Link>
-                </div>
+                  <Link to="/sembadapalayam">
+                    <p className="pt-5 font-bold text-center text-2xl hover:text-blue-700">
+                      <FormattedMessage
+                        id="siteSemone"
+                        defaultMessage="Sempadapalayam, Punjai Pugalur "
+                      />
+                    </p>
+                    <p className="lg:pt-5 font-bold text-center text-2xl hover:text-blue-700">
+                      <FormattedMessage
+                        id="siteSemtwo"
+                        defaultMessage="Karur "
+                      />
+                    </p>
+                  </Link>
+                  <div className="mt-5 text-center">
+                    <Link
+                      to="/sembadapalayam"
+                      className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1  "
+                    >
+                      <FormattedMessage
+                        id="viewDetails"
+                        defaultMessage="View Details ➜ "
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="px-20 lg:pr-40  lg:pt-0 pt-16">

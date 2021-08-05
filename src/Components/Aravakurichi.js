@@ -101,7 +101,6 @@ const Aravakurichi = () => {
                     />
                   </span>
                   <span>
-                   
                     <FormattedMessage
                       id="idValue"
                       defaultMessage=" Thogai Murugan Avenue"
@@ -212,7 +211,6 @@ const Aravakurichi = () => {
       text-sm bg-blue-400 border-blue-600 w-3/4 mt-5 lg:mt-16 lg:ml-8"
                 >
                   <b>
-                   
                     <FormattedMessage id="submit" defaultMessage="Submit" />
                   </b>
                 </button>

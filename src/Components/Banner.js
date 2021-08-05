@@ -2,15 +2,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Banner() {
-  const settings = {
-    /* dots: true,
+//function Banner() {
+//const settings = {
+/* dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1*/
 
-    infinite: true,
+/* infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -36,7 +36,7 @@ function Banner() {
     </div>
   );
 }
-export default Banner;
+export default Banner;*/
 /*class Banner extends Component {
   render() {
     return (
@@ -52,15 +52,15 @@ export default Banner;
 export default Banner;*/
 /*}*/
 
-/*function Banner() {
+function Banner() {
   return (
     <>
       <div className="App">
         <video width="100%" height="200" controls autoPlay muted loop>
-          <source src="/img/video.mp4" type="test/mp4" />
+          <source src="/img/add.mp4" type="test/mp4" />
         </video>
       </div>
     </>
   );
 }
-export default Banner;*/
+export default Banner;

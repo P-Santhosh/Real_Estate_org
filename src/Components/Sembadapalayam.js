@@ -220,7 +220,7 @@ const Sembadapalayam = () => {
                 <br />
                 <label>
                   <textarea
-                    class= "rounded form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
+                    class="rounded form-textarea border hover:border-blue-600  w-8/9 lg:px-16 px-6mb-4 p-2"
                     rows="6"
                     placeholder="Message"
                   ></textarea>

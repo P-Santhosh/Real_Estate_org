@@ -1,7 +1,7 @@
 import React from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
-import { IntlProvider, FormattedMessage} from "react-intl";
+import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   arthanaripalayamHead:
     "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES @ Arthanaripalayam, Paramathi Velur",
