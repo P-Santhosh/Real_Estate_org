@@ -3,14 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 //function Banner() {
-//const settings = {
-/* dots: true,
+  //const settings = {
+    /* dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1*/
 
-/* infinite: true,
+   /* infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -57,7 +57,7 @@ function Banner() {
     <>
       <div className="App">
         <video width="100%" height="200" controls autoPlay muted loop>
-          <source src="/img/add.mp4" type="test/mp4" />
+          <source src="/img/Test.mp4" type="test/mp4" />
         </video>
       </div>
     </>

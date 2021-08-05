@@ -37,7 +37,7 @@ const messagesInFrench = {
   submit: "Submit",
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, ",
-  addressTwo: " sempadapalayam, karur",
+  addressTwo: " Sempadapalayam, Karur",
   addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
   contactTwo: "97890-63333",
@@ -485,7 +485,7 @@ const Content = () => {
                 <p className="mb-2">
                   <FormattedMessage
                     id="addressTwo"
-                    defaultMessage="sempadapalayam, karur "
+                    defaultMessage="Sempadapalayam, Karur "
                   />
                 </p>
                 <p className="mb-2">

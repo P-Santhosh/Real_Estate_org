@@ -4,7 +4,7 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, ",
-  addressTwo: "sempadapalayam, Karur",
+  addressTwo: "Sempadapalayam, Karur",
   addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
   contactTwo: "97890-63333",
@@ -37,7 +37,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
               </div>
-              <div className="text-left lg:px-32 px-6  text-xl font-medium">
+              <div className="text-left lg:pl-32 lg:pr-24 px-6  text-xl font-medium">
                 <p>
                   <Link to="/" className="p-4 hover:text-red-600">
                     <FormattedMessage id="home " defaultMessage="Home " />
@@ -106,7 +106,7 @@ class Footer extends React.Component {
                 <p className="mb-2 font-medium">
                   <FormattedMessage
                     id="addressTwo"
-                    defaultMessage="sempadapalayam, Karur "
+                    defaultMessage="Sempadapalayam, Karur "
                   />
                 </p>
                 <p className="mb-2 font-medium">
