@@ -11,7 +11,7 @@ const messagesInFrench = {
   city: "City :",
   state: "State :",
   sempadapalayamAddressone: "Kadai veethi, Sempadapalayam,",
-  sempadapalayamAddresstwo: "punjai pugalur karur 639117",
+  sempadapalayamAddresstwo: "Punjai Pugalur, Karur 639117",
   sempadapalayamCity: "Karur",
   sempadapalayamState: "Tamilnadu",
   propertySpecifications: " PROPERTY DETAILS & SPECIFICATIONS",
@@ -72,7 +72,7 @@ const Sembadapalayam = () => {
                     <br />{" "}
                     <FormattedMessage
                       id="sempadapalayamAddresstwo"
-                      defaultMessage="punjai pugalur karur 639117 "
+                      defaultMessage="Punjai Pugalur, Karur 639117 "
                     />
                   </span>
                 </p>

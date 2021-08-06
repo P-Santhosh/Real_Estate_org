@@ -15,13 +15,19 @@ function Bannerone() {
     <div className="slider m-0 p-0">
       <Slider {...settings}>
         <div>
+          <img className="w-full max-h-screen" src="/img/one.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/two.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/three.jpg" alt="" />
+        </div>
+        <div>
+          <img className="w-full max-h-screen" src="/img/four.jpg" alt="" />
+        </div>
+        <div>
           <img className="w-full max-h-screen" src="/img/demo1.jpg" alt="" />
-        </div>
-        <div>
-          <img className="w-full max-h-screen" src="/img/demo.jpg" alt="" />
-        </div>
-        <div>
-          <img className="w-full max-h-screen" src="/img/demo2.jpg" alt="" />
         </div>
         <div>
           <img className="w-full max-h-screen" src="/img/demo3.jpg" alt="" />

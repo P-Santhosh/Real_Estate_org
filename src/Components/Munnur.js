@@ -10,7 +10,7 @@ const messagesInFrench = {
   address: "Address :",
   city: "City :",
   state: "State :",
-  munnurAddressone: "Karur paramathi to noyyal road,",
+  munnurAddressone: "Karur Paramathi to Noyyal road,",
   munnurAddresstwo: "Karur Paramathi, Karur",
   munnurCity: "Karur",
   munnurState: "Tamilnadu",
@@ -67,7 +67,7 @@ const Munnur = () => {
                   <span>
                     <FormattedMessage
                       id="munnurAddressone"
-                      defaultMessage=" Karur paramathi to noyyal road,"
+                      defaultMessage=" Karur Paramathi to Noyyal road,"
                     />
 
                     <br />

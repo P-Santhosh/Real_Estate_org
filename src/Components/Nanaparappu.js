@@ -10,7 +10,7 @@ const messagesInFrench = {
   address: "Address :",
   city: "City :",
   state: "State :",
-  nanaparappuAddressone: "Near mariyamman temple, nanaparappu",
+  nanaparappuAddressone: "Near mariyamman temple, Nanaparappu",
   nanaparappuAddresstwo: " Punjai Pugalur, Karur",
   nanaparappuCity: "Karur",
   nanaparappuState: "Tamilnadu",
@@ -66,7 +66,7 @@ const Nanaparappu = () => {
                   <span>
                     <FormattedMessage
                       id="nanaparappuAddressone"
-                      defaultMessage="Near mariyamman temple, nanaparappu "
+                      defaultMessage="Near mariyamman temple, Nanaparappu "
                     />
 
                     <br />

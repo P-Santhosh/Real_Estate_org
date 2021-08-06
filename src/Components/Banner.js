@@ -57,7 +57,7 @@ function Banner() {
     <>
       <div className="App">
         <video width="100%" height="200" controls autoPlay muted loop>
-          <source src="/img/Test.mp4" type="test/mp4" />
+          <source src="/img/Test.mp4" type="video/mp4" />
         </video>
       </div>
     </>

@@ -10,8 +10,8 @@ const messagesInFrench = {
   address: "Address :",
   city: "City :",
   state: "State :",
-  pattasukadaiAddressone: "NH 44, paramathi to Namakkal road,",
-  pattasukadaiAddresstwo: "near pattasukadi Paramathi velur,Namakkal",
+  pattasukadaiAddressone: "NH 44, Paramathi to Namakkal road,",
+  pattasukadaiAddresstwo: "Near Pattasukadi Paramathi Velur,Namakkal",
   pattasukadaiCity: " Namakkal",
   pattasukadaiState: "Tamilnadu",
   propertySpecifications: " PROPERTY DETAILS & SPECIFICATIONS",
@@ -67,12 +67,12 @@ const Pattasukadi = () => {
                   <span>
                     <FormattedMessage
                       id="pattasukadaiAddressone"
-                      defaultMessage="NH 44, paramathi to Namakkal road, "
+                      defaultMessage="NH 44, Paramathi to Namakkal road, "
                     />
                     <br />{" "}
                     <FormattedMessage
                       id="pattasukadaiAddresstwo"
-                      defaultMessage="near pattasukadi Paramathi velur,Namakkal "
+                      defaultMessage="Near Pattasukadi Paramathi Velur,Namakkal "
                     />
                   </span>
                 </p>
