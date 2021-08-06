@@ -83,6 +83,7 @@ const Contact = () => {
                   defaultMessage="94426-93171 "
                 />
               </p>
+              /
               <p className="mb-2">
                 <FormattedMessage
                   id="contactTwo"

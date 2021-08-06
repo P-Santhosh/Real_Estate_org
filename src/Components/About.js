@@ -7,8 +7,8 @@ const messagesInFrench = {
     "Achievements become routine if dreams are backed by the desire to reach them.",
   founderName: "Shri.Thogai Murugan ",
   founderPosition: "Founder, Thogai Murugan Builders",
-  ceoName: "Santhose Murugan",
-  ceoPosition: "CEO, Thogai Murugan Builders",
+  ceoName: "Mr.Santhose Murugan",
+  ceoPosition: "MD, Thogai Murugan Builders",
   visionHead: "Our Vision & Values",
   vision:
     ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
@@ -58,13 +58,13 @@ const About = () => {
             />
           </p>
           <hr />
-          <div className="lg:flex">
+          <div className="lg:flex ">
             <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56 lg:px-1 px-12">
-                <img
+              <div className="  lg:px-1 px-12 py-6">
+              <img
                   alt="..."
-                  className="align-middle border-none max-w-full h-auto rounded-lg"
-                  src="/img/banner.jpg"
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
                 />
               </div>
               <b>
@@ -81,23 +81,23 @@ const About = () => {
               </p>
             </div>
             <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56 lg:px-1 px-12">
-                <img
+              <div className="  lg:px-1 px-12 py-6">
+              <img
                   alt="..."
-                  className="align-middle border-none max-w-full h-auto rounded-lg "
-                  src="/img/banner.jpg"
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
                 />
               </div>
               <b>
                 <FormattedMessage
                   id=" ceoName"
-                  defaultMessage="Santhose Murugan "
+                  defaultMessage="Mr.Santhose Murugan "
                 />
               </b>
               <p>
                 <FormattedMessage
                   id=" ceoPosition"
-                  defaultMessage="CEO, Thogai Murugan Builders"
+                  defaultMessage="MD, Thogai Murugan Builders"
                 />
               </p>
             </div>

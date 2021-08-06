@@ -129,7 +129,7 @@ const Content = () => {
                 <img
                   alt="..."
                   className="align-middle border-none max-w-full h-auto  hover:shadow-2xl"
-                  src="/img/demo1.jpg"
+                  src="/img/one.jpg"
                 />
               </div>
             </div>
