@@ -166,6 +166,7 @@ class Footer extends React.Component {
               </span>
             </a>
           </div>
+          
         </footer>
       </IntlProvider>
     );
