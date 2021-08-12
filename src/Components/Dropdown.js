@@ -8,6 +8,8 @@ const messagesInFrench = {
   blogs: "Blogs",
   gallery: "Gallery",
   contact: " Contact",
+  disclaimer: "Disclaimer",
+  csr:"CSR",
 };
 const Dropdown = ({ isOpen, toggle }) => {
   return (
@@ -32,12 +34,18 @@ const Dropdown = ({ isOpen, toggle }) => {
         <Link to="/blogs" className="p-4">
           <FormattedMessage id="blogs" defaultMessage="Blogs " />
         </Link>
+        <Link to="/csr" className="p-4 hover:text-red-600">
+            <FormattedMessage id="csr" defaultMessage="CSR " />
+          </Link>
         <Link to="/gallery" className="p-4">
           <FormattedMessage id="gallery" defaultMessage="Gallery" />
         </Link>
         <Link to="/contact" className="p-4">
           <FormattedMessage id=" contact" defaultMessage=" Contact" />
         </Link>
+        <Link to="/disclaimer" className="p-4 hover:text-red-600">
+            <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
+          </Link>
       </div>
     </IntlProvider>
   );

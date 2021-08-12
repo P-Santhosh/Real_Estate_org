@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
+import Bannerhome from "./Bannerhome";
+import Banner from "./Banner";
+import BannerCsr from "./BannerCsr";
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
   founderGoal:
     "Achievements become routine if dreams are backed by the desire to reach them.",
   founderName: "Shri.Thogai Murugan ",
   founderPosition: "Founder, Thogai Murugan Builders",
+  mdName: "Mr.Santhose Murugan",
+  mdPosition: "MD, Thogai Murugan Builders",
   visionHead: "Our Vision & Values",
   vision:
     ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
@@ -41,64 +46,50 @@ const messagesInFrench = {
   addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
   contactTwo: "97890-63333",
+  about: "About Us",
+  aboutContent:
+    "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
+    ourProjects:"Our Projects",
+    clickHere:"click here to explore our projects",
+    csr:"CSR",
 };
 const Content = () => {
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <section>
-          <div className="text-center pt-12 lg:pb-12 lg:px-20 px-3">
-            <h5 className="text-xl font-bold">
-              <FormattedMessage
-                id=" founderHead"
-                defaultMessage=" FOUNDER OF THOGAI MURUGAN BUILDERS"
-              />
-            </h5>
-            <p className="pt-4">
-              <FormattedMessage
-                id=" founderGoal"
-                defaultMessage="Achievements become routine if dreams are backed by the desire to reach them."
-              />
+          <div className="bg-gray-200 text-gray-700 lg:py-16 px-12 py-12">
+            <p className="text-center text-4xl font-semibold text-gray-800">
+              <FormattedMessage id="about" defaultMessage="About Us" />
             </p>
-            <hr></hr>
-            <div className="lg:flex lg:pt-8 ">
-              <div className="lg:w-2/4 ">
-                <div className=" lg:pl-48 lg:px-1 px-16 lg:pt-6">
-                  <img
-                    alt="..."
-                    className="align-middle border-none max-w-full h-auto rounded-lg"
-                    src="/img/banner.jpg"
-                  />
-                </div>
+            <div className="lg:flex lg:pt-16  py-10">
+              <div className="lg:w-2/6  text-center ">
+                <img
+                  alt="..."
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
+                />
                 <b>
                   <FormattedMessage
                     id=" founderName"
                     defaultMessage="Shri.Thogai Murugan "
                   />
                 </b>
-                <p>
+                <p className="font-medium">
                   <FormattedMessage
                     id=" founderPosition"
                     defaultMessage="Founder, Thogai Murugan Builders"
                   />
                 </p>
               </div>
-              <div className="text-justify pt-12 lg:w-2/4 md:pl-12 lg:pr-48 p-6 ">
-                <b>
+              <div className="lg:w-2/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
+                <p className="font-semibold">
                   <FormattedMessage
-                    id=" visionHead"
-                    defaultMessage="Our Vision & Values"
-                  />
-                </b>
-                <hr></hr>
-                <p>
-                  <FormattedMessage
-                    id=" vision"
-                    defaultMessage='"Thogai Murugan Builders brings a host of capabilities to majorinfrastructure projects through an integrated approach that spans thelife cycle of infrastructure to professional & support services".
-                Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.'
+                    id=" aboutContent"
+                    defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
                   />
                 </p>
-                <div className=" py-6  ">
+                <div className=" py-6  text-gray-900">
                   <Link
                     to="/about"
                     className="rounded-full border-4 px-20   py-2 font-bold
@@ -111,236 +102,70 @@ const Content = () => {
                   </Link>
                 </div>
               </div>
+              <div className="lg:w-2/6 text-center ">
+                <img
+                  alt="..."
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
+                />
+                <b>
+                  <FormattedMessage
+                    id=" mdName"
+                    defaultMessage="Mr.Santhose Murugan "
+                  />
+                </b>
+                <p className="font-medium">
+                  <FormattedMessage
+                    id=" mdPosition"
+                    defaultMessage="MD, Thogai Murugan Builders"
+                  />
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <div className="text-center lg:pt-12 lg:pb-12 lg:px-20 ">
-          <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
+    
+       <section>
+       <div className="text-center py-3 lg:px-20 ">
+          <h5 className="text-3xl font-semibold   bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
             <FormattedMessage
-              id=" projectsHead"
-              defaultMessage="THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES"
+              id="ourProjects"
+              defaultMessage="Our Projects"
             />
           </h5>
         </div>
-        <section>
-          <div className="lg:flex lg:py-12 ">
-            <div className="lg:w-2/4 ">
-              <div className=" lg:pl-56">
-                <img
-                  alt="..."
-                  className="align-middle border-none max-w-full h-auto  hover:shadow-2xl"
-                  src="/img/one.jpg"
-                />
-              </div>
-            </div>
-            <div className="text-justify pt-12 lg:w-2/4 md:pl-12 lg:pr-48 p-6">
-              <b>
-                <FormattedMessage
-                  id=" projectsOngoing"
-                  defaultMessage="OUR ONGOING PROJECTS"
-                />
-              </b>
-
-              <hr></hr>
-              <p>
-                <FormattedMessage
-                  id=" projectsOngoingdesc"
-                  defaultMessage='"Thogai Murugan Builders brings a host of capabilities to major
-               infrastructure projects through an integrated approach that spans
-               the life cycle of infrastructure to professional & support
-               services". Today, the company is a leader and a trendsetter in the
-               construction industry, delivering custom-designed turnkey projects
-               to government agencies, large corporations and private bodies.'
-                />
-              </p>
-              <div className=" py-6   ">
-                <Link
-                  to="/projects"
-                  className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-20   py-1"
-                >
-                  <FormattedMessage id=" viewAll" defaultMessage="View All ➜" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="lg:flex lg:py-6 lg:pb-16">
-            <div className="lg:w-2/4 ">
-              <div className="text-justify lg:pl-56 lg:pt-16 lg:px-0 px-6">
-                <b>
-                  <FormattedMessage
-                    id=" projectsCompleted"
-                    defaultMessage="OUR COMPLETED PROJECTS"
-                  />
-                </b>
-                <hr></hr>
-                <p>
-                  <FormattedMessage
-                    id=" projectsCompleteddesc"
-                    defaultMessage='"Thogai Murugan Builders brings a host of capabilities to major
-               infrastructure projects through an integrated approach that spans
-               the life cycle of infrastructure to professional & support
-               services". Today, the company is a leader and a trendsetter in the
-               construction industry, delivering custom-designed turnkey projects
-               to government agencies, large corporations and private bodies.'
-                  />
-                </p>
-                <div className=" py-6  ">
+        <Bannerhome ></Bannerhome>
+        <div className=" py-6  text-gray-900 text-center">
                   <Link
                     to="/projects"
-                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                   px-20  py-1 "
+                    className="rounded-full border-4 lg:px-20 px-5    py-3 font-semibold
+      text-lg bg-blue-400 border-blue-600   "
                   >
                     <FormattedMessage
-                      id=" viewAll"
-                      defaultMessage="View All ➜"
+                      id="clickHere"
+                      defaultMessage="click here to explore our projects"
                     />
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div className="text-justify pt-6 lg:w-2/4 md:pl-12 lg:pr-48 p-6">
-              <img
-                alt="..."
-                className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
-                src="/img/demo1.jpg"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="lg:pt-16 lg:pb-12 lg:px-20">
-          <div className="text-center">
-            <h5 className="text-xl font-bold pb-2 bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  py-4">
+       </section>
+     
+    <section>
+    <div className="text-center lg:px-20 mt-10">
+            <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage
-                id=" managementHead"
-                defaultMessage="THOGAI MURUGAN BUILDERS MANAGEMENTS"
+                id="csr"
+                defaultMessage="CSR"
               />
             </h5>
-            <p className="pt-6">
-              <FormattedMessage
-                id=" managementGoal"
-                defaultMessage="Achievements become a routine if dreams are backed by the desire to reach them."
-              />
-            </p>
-            <hr></hr>
           </div>
-          <div className="lg:flex mt-12">
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameOne"
-                      defaultMessage="Shri.Thogai Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1  text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionOne"
-                      defaultMessage=" Founder "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameTwo"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionTwo"
-                      defaultMessage="CHAIRMAN "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameThree"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionThree"
-                      defaultMessage="MANAGING DIRECTOR "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameFour"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage id="bpositionFour" defaultMessage="CEO" />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameFive"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage id="bpositionFive" defaultMessage="CTO" />
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="py-12">
+          <BannerCsr ></BannerCsr>
           </div>
-        </section>
-        <section className="lg:py-12">
+         
+    </section>
+        <section className="lg:py-12 pt-10">
           <div className="text-center lg:px-20">
-            <h5 className="text-xl font-bold pb-2  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
+            <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage
                 id="ourGroup"
                 defaultMessage="OUR GROUP OF COMPANIES"
@@ -395,7 +220,7 @@ const Content = () => {
           </div>
         </section>
         <div className="text-center lg:pt-12 pt-1 pb-3 lg:px-20 ">
-          <h5 className="text-xl font-bold   bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
+          <h5 className="text-3xl font-semibold   bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
             <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
           </h5>
         </div>
@@ -436,8 +261,8 @@ const Content = () => {
                     ></textarea>
                   </label>
                   <button
-                    className="rounded-full border-4 px-16 py-2 font-bold
-      text-sm bg-blue-400 border-blue-600 w-3/4 mt-5"
+                    className="rounded-full border-4 px-16 py-2 font-semibold
+      text-md bg-blue-400 border-blue-600 w-3/4 mt-5"
                   >
                     <b>
                       <FormattedMessage id="submit" defaultMessage="Submit" />

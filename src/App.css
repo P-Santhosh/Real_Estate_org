@@ -17,12 +17,12 @@
  }
  .slider .slick-prev::before{
   font-size: 35px;
-  color: black;
+  color:rgb(125, 125, 245);
  }
  
 .slider .slick-next:before{
   font-size: 35px;
-  color: black;
+  color:blue;
  }
  
 @media (prefers-reduced-motion: no-preference) {

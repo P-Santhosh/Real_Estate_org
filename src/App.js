@@ -33,6 +33,8 @@ import Pattasukadi from "./Components/Pattasukadai";
 import Munnur from "./Components/Munnur";
 import Nanaparappu from "./Components/Nanaparappu";
 import Aravakurichi from "./Components/Aravakurichi";
+import Disclaimer from "./Components/Disclaimer";
+import Csr from "./Components/Csr";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -76,6 +78,8 @@ function App() {
         <Route path="/munnur" component={Munnur} />
         <Route path="/nanaparappu" component={Nanaparappu} />
         <Route path="/aravakurichi" component={Aravakurichi} />
+        <Route path="/disclaimer" component={Disclaimer} />
+        <Route path="/csr" component={Csr} />
       </Switch>
 
       </div>
