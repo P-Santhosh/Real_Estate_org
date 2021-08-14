@@ -37,7 +37,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
               </div>
-              <div className="text-left lg:pl-32 lg:pr-24 px-6  text-xl font-medium">
+              <div className="text-left lg:pl-32 lg:pr-12 px-6 lg:pt-3 text-xl font-medium">
                 <p>
                   <Link to="/" className="p-4 hover:text-red-600">
                     <FormattedMessage id="home " defaultMessage="Home " />
@@ -71,7 +71,7 @@ class Footer extends React.Component {
                 </p>
               </div>
 
-              <div className="text-left lg:px-32  px-10 py-3 font-bold ">
+              <div className="text-left lg:px-32  px-10 py-2 font-bold ">
                 <h2>
                   <b>
                     <FormattedMessage
@@ -131,12 +131,36 @@ class Footer extends React.Component {
                     />
                   </svg>
                   <p className="mb-2 font-medium items-end ">
+                  <a href="tel:+9442693171">
                     <FormattedMessage
                       id="contactOne"
                       defaultMessage="94426-93171 "
                     />
+                    </a>
                   </p>
                 </div>
+                <div className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+
+              <p className="mb-2  ">
+                <a href="mailto:santhoshprakash19@gmail.com">
+                  contact@thoagimuruganbuilders.com
+                </a>
+              </p>
+            </div>
               </div>
             </div>
           </section>

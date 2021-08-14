@@ -49,9 +49,9 @@ const messagesInFrench = {
   about: "About Us",
   aboutContent:
     "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
-    ourProjects:"Our Projects",
-    clickHere:"click here to explore our projects",
-    csr:"CSR",
+  ourProjects: "Our Projects",
+  clickHere: "click here to explore our projects",
+  csr: "CSR",
 };
 const Content = () => {
   return (
@@ -124,45 +124,41 @@ const Content = () => {
             </div>
           </div>
         </section>
-    
-       <section>
-       <div className="text-center py-3 lg:px-20 ">
-          <h5 className="text-3xl font-semibold   bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
-            <FormattedMessage
-              id="ourProjects"
-              defaultMessage="Our Projects"
-            />
-          </h5>
-        </div>
-        <Bannerhome ></Bannerhome>
-        <div className=" py-6  text-gray-900 text-center">
-                  <Link
-                    to="/projects"
-                    className="rounded-full border-4 lg:px-20 px-5    py-3 font-semibold
-      text-lg bg-blue-400 border-blue-600   "
-                  >
-                    <FormattedMessage
-                      id="clickHere"
-                      defaultMessage="click here to explore our projects"
-                    />
-                  </Link>
-                </div>
-       </section>
-     
-    <section>
-    <div className="text-center lg:px-20 mt-10">
-            <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
+
+        <section>
+          <div className="text-center py-3 lg:px-20 ">
+            <h5 className="text-3xl font-semibold   bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage
-                id="csr"
-                defaultMessage="CSR"
+                id="ourProjects"
+                defaultMessage="Our Projects"
               />
             </h5>
           </div>
-          <div className="py-12">
-          <BannerCsr ></BannerCsr>
+          <Bannerhome></Bannerhome>
+          <div className=" py-6  text-gray-900 text-center">
+            <Link
+              to="/projects"
+              className="rounded-full border-4 lg:px-20 px-5    py-3 font-semibold
+      text-lg bg-blue-400 border-blue-600   "
+            >
+              <FormattedMessage
+                id="clickHere"
+                defaultMessage="click here to explore our projects"
+              />
+            </Link>
           </div>
-         
-    </section>
+        </section>
+
+        <section>
+          <div className="text-center lg:px-20 mt-10">
+            <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
+              <FormattedMessage id="csr" defaultMessage="CSR" />
+            </h5>
+          </div>
+          <div className="py-12">
+            <BannerCsr></BannerCsr>
+          </div>
+        </section>
         <section className="lg:py-12 pt-10">
           <div className="text-center lg:px-20">
             <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
@@ -197,7 +193,7 @@ const Content = () => {
             </div>
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
+                <a href="http://finstreetservices.com/" target="blank">
                   <img
                     alt="..."
                     src="/img/finestreet.jpg"
@@ -335,16 +331,35 @@ const Content = () => {
                     />
                   </svg>
                   <p className="mb-2">
+                  <a href="tel:+9442693171">
                     <FormattedMessage
                       id="contactOne"
                       defaultMessage="94426-93171 "
                     />
+                    </a>
                   </p>
-                  <p className="mb-2">
-                    <FormattedMessage
-                      id="contactTwo"
-                      defaultMessage="97890-63333 "
+                  
+                </div>
+                <div className="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
+                  </svg>
+
+                  <p className="mb-2  ">
+                    <a href="mailto:santhoshprakash19@gmail.com">
+                      contact@thoagimuruganbuilders.com
+                    </a>
                   </p>
                 </div>
               </div>
