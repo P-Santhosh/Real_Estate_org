@@ -18,6 +18,8 @@ const messagesInFrench = {
   blogs: "Blogs",
   gallery: "Gallery",
   contact: " Contact",
+  disclaimer: "Disclaimer",
+  csr:"CSR",
 };
 class Footer extends React.Component {
   render() {
@@ -37,7 +39,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
               </div>
-              <div className="text-left lg:pl-32 lg:pr-12 px-6 lg:pt-3 text-xl font-medium">
+              <div className="text-left lg:pl-32 lg:pr-12 px-6  text-xl font-medium">
                 <p>
                   <Link to="/" className="p-4 hover:text-red-600">
                     <FormattedMessage id="home " defaultMessage="Home " />
@@ -60,6 +62,11 @@ class Footer extends React.Component {
                   </Link>
                 </p>
                 <p>
+                  <Link to="/csr" className="p-4 hover:text-red-600">
+                    <FormattedMessage id="csr" defaultMessage="CSR " />
+                  </Link>
+                </p>
+                <p>
                   <Link to="/gallery" className="p-4 hover:text-red-600">
                     <FormattedMessage id="gallery" defaultMessage="Gallery" />
                   </Link>
@@ -69,9 +76,14 @@ class Footer extends React.Component {
                     <FormattedMessage id=" contact" defaultMessage=" Contact" />
                   </Link>
                 </p>
+                <p>
+                  <Link to="/disclaimer" className="p-4 hover:text-red-600">
+                    <FormattedMessage id="disclaimer" defaultMessage=" Disclaimer" />
+                  </Link>
+                </p>
               </div>
 
-              <div className="text-left lg:px-32  px-10 py-2 font-bold ">
+              <div className="text-left lg:px-32  px-10 py-2 lg:pt-5 font-bold ">
                 <h2>
                   <b>
                     <FormattedMessage
@@ -157,7 +169,7 @@ class Footer extends React.Component {
 
               <p className="mb-2  ">
                 <a href="mailto:santhoshprakash19@gmail.com">
-                  contact@thoagimuruganbuilders.com
+                  contact@tmbl.com
                 </a>
               </p>
             </div>

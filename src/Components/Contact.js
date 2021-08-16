@@ -105,7 +105,7 @@ const Contact = () => {
 
               <p className="mb-2  ">
                 <a href="mailto:santhoshprakash19@gmail.com">
-                  contact@thoagimuruganbuilders.com
+                  contact@tmbl.com
                 </a>
               </p>
             </div>

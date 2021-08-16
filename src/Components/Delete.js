@@ -348,6 +348,50 @@ const Delete = () => {
             </div>
           </div>
     </section>*/}
+     {/*<div className="lg:flex ">
+            <div className="lg:w-2/4 ">
+              <div className="  lg:px-1 px-12 py-6">
+              <img
+                  alt="..."
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
+                />
+              </div>
+              <b>
+                <FormattedMessage
+                  id=" founderName"
+                  defaultMessage="Shri.Thogai Murugan "
+                />
+              </b>
+              <p>
+                <FormattedMessage
+                  id=" founderPosition"
+                  defaultMessage="Founder, Thogai Murugan Builders"
+                />
+              </p>
+            </div>
+            <div className="lg:w-2/4 ">
+              <div className="  lg:px-1 px-12 py-6">
+              <img
+                  alt="..."
+                  src="/img/ceo.jpg"
+                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
+                />
+              </div>
+              <b>
+                <FormattedMessage
+                  id=" ceoName"
+                  defaultMessage="Mr.Santhose Murugan "
+                />
+              </b>
+              <p>
+                <FormattedMessage
+                  id=" ceoPosition"
+                  defaultMessage="MD, Thogai Murugan Builders"
+                />
+              </p>
+            </div>
+  </div>*/}
       </IntlProvider>
     </>
   );

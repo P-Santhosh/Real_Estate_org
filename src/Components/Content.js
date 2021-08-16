@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import Bannerhome from "./Bannerhome";
-import Banner from "./Banner";
 import BannerCsr from "./BannerCsr";
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
@@ -126,7 +125,7 @@ const Content = () => {
         </section>
 
         <section>
-          <div className="text-center py-3 lg:px-20 ">
+          <div className="text-center lg:pt-10 py-3 lg:px-20 ">
             <h5 className="text-3xl font-semibold   bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage
                 id="ourProjects"
@@ -341,27 +340,27 @@ const Content = () => {
                   
                 </div>
                 <div className="flex">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
 
-                  <p className="mb-2  ">
-                    <a href="mailto:santhoshprakash19@gmail.com">
-                      contact@thoagimuruganbuilders.com
-                    </a>
-                  </p>
-                </div>
+              <p className="mb-2  ">
+                <a href="mailto:santhoshprakash19@gmail.com">
+                  contact@tmbl.com
+                </a>
+              </p>
+            </div>
               </div>
             </div>
           </div>

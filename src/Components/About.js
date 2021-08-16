@@ -58,46 +58,73 @@ const About = () => {
             />
           </p>
           <hr />
-          <div className="lg:flex ">
-            <div className="lg:w-2/4 ">
-              <div className="  lg:px-1 px-12 py-6">
+          <div className="lg:flex lg:pt-16  py-10">
+            <div className="lg:w-3/6  text-center ">
               <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
-                />
-              </div>
+                alt="..."
+                src="/img/ceo.jpg"
+                className="shadow-lg rounded-full  w-2/6 hover:shadow-2xl mx-auto"
+              />
               <b>
                 <FormattedMessage
                   id=" founderName"
                   defaultMessage="Shri.Thogai Murugan "
                 />
               </b>
-              <p>
+              <p className="font-medium">
                 <FormattedMessage
                   id=" founderPosition"
                   defaultMessage="Founder, Thogai Murugan Builders"
                 />
               </p>
             </div>
-            <div className="lg:w-2/4 ">
-              <div className="  lg:px-1 px-12 py-6">
-              <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-2/6 hover:shadow-2xl"
-                />
-              </div>
-              <b>
+            <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
+              <p className="font-semibold">
                 <FormattedMessage
+                  id=" aboutContent"
+                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                />
+              </p>
+              <p className="font-semibold">
+                <FormattedMessage
+                  id=" aboutContent"
+                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                />
+              </p>
+            </div>
+          </div>
+        
+          <div className="lg:flex lg:pt-16  py-10 bg-blue-100">
+            <div className="lg:w-3/6  text-center ">
+              <img
+                alt="..."
+                src="/img/ceo.jpg"
+                className="shadow-lg rounded-full  w-2/6 hover:shadow-2xl mx-auto"
+              />
+              <b>
+              <FormattedMessage
                   id=" ceoName"
                   defaultMessage="Mr.Santhose Murugan "
                 />
               </b>
-              <p>
-                <FormattedMessage
+              <p className="font-medium">
+              <FormattedMessage
                   id=" ceoPosition"
                   defaultMessage="MD, Thogai Murugan Builders"
+                />
+              </p>
+            </div>
+            <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-3">
+              <p className="font-semibold">
+                <FormattedMessage
+                  id=" aboutContent"
+                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                />
+              </p>
+              <p className="font-semibold">
+                <FormattedMessage
+                  id=" aboutContent"
+                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
                 />
               </p>
             </div>
@@ -158,134 +185,7 @@ const About = () => {
             />
           </p>
         </div>
-        <section className="lg:pt-16 lg:pb-12 lg:px-20">
-          <div className="text-center">
-            <h5 className="text-xl font-bold pb-2 bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  py-4">
-              <FormattedMessage
-                id=" managementHead"
-                defaultMessage="THOGAI MURUGAN BUILDERS MANAGEMENTS"
-              />
-            </h5>
-            <p className="pt-6">
-              <FormattedMessage
-                id=" managementGoal"
-                defaultMessage="Achievements become a routine if dreams are backed by the desire to reach them."
-              />
-            </p>
-            <hr></hr>
-          </div>
-          <div className="lg:flex mt-12">
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl "
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameOne"
-                      defaultMessage="Shri.Thogai Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1  text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionOne"
-                      defaultMessage=" Founder "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameTwo"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionTwo"
-                      defaultMessage="CHAIRMAN "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameThree"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage
-                      id="bpositionThree"
-                      defaultMessage="MANAGING DIRECTOR "
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameFour"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage id="bpositionFour" defaultMessage="CEO" />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <img
-                  alt="..."
-                  src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full mx-auto w-3/4 hover:shadow-2xl"
-                />
-                <div className="pt-6 text-center">
-                  <h5 className=" font-bold">
-                    <FormattedMessage
-                      id="bnameFive"
-                      defaultMessage="Santhose Murugan "
-                    />
-                  </h5>
-                  <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    <FormattedMessage id="bpositionFive" defaultMessage="CTO" />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
         <section className="lg:py-12">
           <div className="text-center lg:px-20">
             <h5 className="text-xl font-bold pb-2  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">

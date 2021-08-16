@@ -14,7 +14,8 @@
 
 .slick-arrow::before {
   font-size: 35px !important;
-  color: blue !important;
+  color:black !important;
+  background-color: #fff !important;
 }
 
 

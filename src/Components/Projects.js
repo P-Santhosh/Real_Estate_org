@@ -53,7 +53,7 @@ const Projects = () => {
                   <Link to="/sembadapalayam">
                     <img
                       alt="..."
-                      className="align-middle border-none max-w-full h-auto   "
+                      className="align-middle border-none max-w-full h-auto  transform hover:scale-110 "
                       src="/img/demo1.jpg"
                     />
                   </Link>
@@ -89,7 +89,7 @@ const Projects = () => {
                 <Link to="/arthanaripalayam">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -128,7 +128,7 @@ const Projects = () => {
                 <Link to="/pattasukadi">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -163,7 +163,7 @@ const Projects = () => {
                 <Link to="/munnur">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -202,7 +202,7 @@ const Projects = () => {
                 <Link to="/nanaparappu">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -237,7 +237,7 @@ const Projects = () => {
                 <Link to="/aravakurichi">
                   <img
                     alt="..."
-                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                    className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                     src="/img/demo1.jpg"
                   />
                 </Link>
@@ -286,7 +286,7 @@ const Projects = () => {
               <div className="px-20 lg:pl-40 ">
                 <img
                   alt="..."
-                  className="align-middle border-none max-w-full h-auto hover:shadow-2xl"
+                  className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110"
                   src="/img/demo1.jpg"
                 />
                 <p className="pt-5 font-bold text-center text-2xl hover:text-blue-700">
@@ -299,7 +299,7 @@ const Projects = () => {
               <div className="px-20 lg:pr-40 lg:pt-0 pt-12 lg:pb-0 pb-6">
                 <img
                   alt="..."
-                  className="align-middle border-none max-w-full h-auto hover:shadow-2xl "
+                  className="align-middle border-none max-w-full h-auto hover:shadow-2xl transform hover:scale-110 "
                   src="/img/demo1.jpg"
                 />
                 <p className="pt-5 font-bold text-center text-2xl hover:text-blue-700">
