@@ -57,11 +57,11 @@ const Content = () => {
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <section>
-          <div className="bg-gray-200 text-gray-700 lg:py-16 px-12 py-12">
+          <div className="bg-gray-200 text-gray-700 lg:py-16 px-12 lg:py-12 py-6">
             <p className="text-center text-4xl font-semibold text-gray-800">
               <FormattedMessage id="about" defaultMessage="About Us" />
             </p>
-            <div className="lg:flex lg:pt-16  py-10">
+            <div className="lg:flex lg:pt-16  py-6">
               <div className="lg:w-2/6  text-center ">
                 <img
                   alt="..."
@@ -101,7 +101,7 @@ const Content = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-2/6 text-center ">
+              <div className="lg:w-2/6 text-center lg:pt-0 pt-5">
                 <img
                   alt="..."
                   src="/img/ceo.jpg"
