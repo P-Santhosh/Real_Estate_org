@@ -35,6 +35,8 @@ import Nanaparappu from "./Components/Nanaparappu";
 import Aravakurichi from "./Components/Aravakurichi";
 import Disclaimer from "./Components/Disclaimer";
 import Csr from "./Components/Csr";
+import Blogone from "./Components/Blogone";
+import Blogtwo from "./Components/Blogtwo";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -80,6 +82,8 @@ function App() {
         <Route path="/aravakurichi" component={Aravakurichi} />
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/csr" component={Csr} />
+        <Route path="/blogone" component={Blogone} />
+        <Route path="/blogtwo" component={Blogtwo} />
       </Switch>
 
       </div>

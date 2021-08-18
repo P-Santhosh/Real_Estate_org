@@ -14,14 +14,14 @@ const Contact = () => {
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <p></p>
-        <div className=" lg:pl-40  lg:p-24  lg:flex h-full rounded mb-20  lg:pt-24 px-12  ">
+        <div className=" lg:pl-40  lg:p-24  lg:flex h-full rounded mb-20  lg:pt-24 lg:px-12 px-6 ">
           <img
             alt="..."
             className="align-middle border-none max-w-full h-auto rounded-lg sm:pl-32 "
             src="/img/banner.jpg"
           />
 
-          <div className="center-content lg:pl-64 px-12 lg:pt-8 pt-2  ">
+          <div className="center-content lg:pl-64 lg:px-12 px-3  lg:pt-8 pt-2  ">
             <h2 className="text-xl mb-2">
               <FormattedMessage
                 id="name"
@@ -103,9 +103,9 @@ const Contact = () => {
                 />
               </svg>
 
-              <p className="mb-2  ">
-                <a href="mailto:santhoshprakash19@gmail.com">
-                  contact@tmbl.com
+              <p className="mb-2 com ">
+                <a href="mailto:thogaimuruganrealestates@gmail.com">
+                thogaimuruganrealestates@gmail.com
                 </a>
               </p>
             </div>

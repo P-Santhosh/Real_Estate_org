@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
+import { FiFacebook, FiLinkedin, FiInstagram } from "react-icons/fi";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, ",
@@ -19,7 +20,7 @@ const messagesInFrench = {
   gallery: "Gallery",
   contact: " Contact",
   disclaimer: "Disclaimer",
-  csr:"CSR",
+  csr: "CSR",
 };
 class Footer extends React.Component {
   render() {
@@ -27,7 +28,7 @@ class Footer extends React.Component {
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <footer className=" bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 text-blue-900  pt-10 lg:p-12 text-center">
           <section className="lg:py-9">
-            <div className="lg:flex lg:mt-2 mb-6 px-12">
+            <div className="lg:flex lg:mt-2 mb-6 lg:px-12 px-3">
               <div className="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 ">
                 <div className="px-6">
                   <a href="https://karurtech.com/" target="_blank ">
@@ -39,7 +40,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
               </div>
-              <div className="text-left lg:pl-32 lg:pr-12 px-6  text-xl font-medium">
+              <div className="text-left lg:pl-32 lg:pr-12 lg:px-6  text-xl font-medium">
                 <p>
                   <Link to="/" className="p-4 hover:text-red-600">
                     <FormattedMessage id="home " defaultMessage="Home " />
@@ -78,12 +79,15 @@ class Footer extends React.Component {
                 </p>
                 <p>
                   <Link to="/disclaimer" className="p-4 hover:text-red-600">
-                    <FormattedMessage id="disclaimer" defaultMessage=" Disclaimer" />
+                    <FormattedMessage
+                      id="disclaimer"
+                      defaultMessage=" Disclaimer"
+                    />
                   </Link>
                 </p>
               </div>
 
-              <div className="text-left lg:px-32  px-10 py-2 lg:pt-5 font-bold ">
+              <div className="text-left lg:px-32 pl-4 py-2 lg:pt-5 font-bold ">
                 <h2>
                   <b>
                     <FormattedMessage
@@ -143,39 +147,81 @@ class Footer extends React.Component {
                     />
                   </svg>
                   <p className="mb-2 font-medium items-end ">
-                  <a href="tel:+9442693171">
-                    <FormattedMessage
-                      id="contactOne"
-                      defaultMessage="94426-93171 "
-                    />
+                    <a href="tel:+9442693171">
+                      <FormattedMessage
+                        id="contactOne"
+                        defaultMessage="94426-93171 "
+                      />
                     </a>
                   </p>
                 </div>
                 <div className="flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
 
-              <p className="mb-2  ">
-                <a href="mailto:santhoshprakash19@gmail.com">
-                  contact@tmbl.com
-                </a>
-              </p>
-            </div>
+                  <p className="mb-2  ">
+                    <a href="mailto:thogaimuruganrealestates@gmail.com">
+                      thogaimuruganrealestates@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </section>
+          <div className="flex lg:px-96 lg:mx-40 px-20 lg:pb-0 pb-2 lg:py-3">
+            <p className="lg:px-6 px-3">
+              <a href="tel:+9442693171">
+                <svg
+                  className="w-6 h-6 "
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>{" "}
+              </a>
+            </p>
+            <p className="lg:px-6 px-3">
+              <a href="mailto:thogaimuruganrealestates@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </a>
+            </p>
+            
+            <p className="lg:px-6 px-3"><a   href="https://www.linkedin.com/company/thogai-murugan-real-estates"  target="blank" > <FiLinkedin /> </a></p>
+            <p className="lg:px-6 px-3"><a   href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiFacebook /> </a></p>
+            <p className="lg:px-6 px-3"><a   href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiInstagram/> </a></p>
+          </div>
           <hr></hr>
           <div className="pb-6 font-bold">
             <p className="p-3  mt-4">
@@ -202,7 +248,6 @@ class Footer extends React.Component {
               </span>
             </a>
           </div>
-          
         </footer>
       </IntlProvider>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 const Blogs = () => {
   return (
     <>
@@ -11,26 +11,64 @@ const Blogs = () => {
           Thogai Murugan Builders - Blogs
           </h5>
         </div>
-          <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-            <div className="lg:w-2/6 lg:px-12 lg:py-1 py-5 transform hover:scale-110">
-              <div className="bg-blue-100 text-blue-900  py-10">
-                <p className=" text-center p-10 text-xl">Blog 1  </p>
-              </div>
-              
-            </div>
-            <div className="lg:w-2/6 lg:px-12 lg:py-1 py-5 transform hover:scale-110">
-              <div className="w bg-blue-100 text-blue-900 py-10">
-                <p className=" text-center p-10 text-xl">Blog 2</p>
-              </div>
-            </div>
-            <div className="lg:w-2/6 lg:px-12 lg:py-1 py-5 transform hover:scale-110">
-              <div className=" bg-blue-100 text-blue-900  py-10">
-                <p className=" text-center p-10 text-xl">Blog 3</p>
-              </div>
-            </div>
-          </div>
+        
         </section>
-
+         
+        <section>
+            <div className="lg:flex py-10  lg:pb-20">
+              <div className=" lg:px-20 px-6 lg:pl-40 ">
+                <div>
+                  <Link to="/blogone">
+                    <img
+                      alt="..."
+                      className="align-middle border-none   transform hover:scale-110 "
+                      src="/img/demo1.jpg"
+                    />
+                  </Link>
+                  <Link to="/blogone">
+                    
+            
+                    <p className="lg:pt-5 font-bold text-center text-2xl hover:text-blue-700">
+                    5 Things To Do Before Buying a Property
+                    </p>
+                  </Link>
+                  <div className="mt-5 text-center">
+                    <Link
+                      to="/blogone"
+                      className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1  "
+                    >
+                      Click here see Blog ➜ 
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:px-20 px-6 lg:pr-40  lg:pt-0 pt-16">
+                <Link to="/blogtwo">
+                  <img
+                    alt="..."
+                    className="align-middle border-none   transform hover:scale-110"
+                    src="/img/one.jpg"
+                  />
+                </Link>
+                <Link to="/blogtwo">
+                  
+                  <p className="lg:pt-5 font-bold text-center text-2xl hover:text-blue-700">
+                  Why you choose Thogai Murugan Builders
+                  </p>
+                </Link>
+                <div className="mt-5 text-center">
+                  <Link
+                    to="/blogtwo"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1  "
+                  >
+                    Click here see Blog  ➜
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
         <Footer></Footer>
       </div>
     </>
