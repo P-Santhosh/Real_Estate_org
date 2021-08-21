@@ -119,6 +119,7 @@ const Contact = () => {
         </p>
         <Footer />
       </IntlProvider>
+      
     </>
   );
 };

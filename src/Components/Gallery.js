@@ -38,6 +38,7 @@ const Gallery = () => {
             <img alt="..." src="/img/demo2.jpg" />
           </div>
         </div>
+        
       </div>
       <Footer></Footer>
     </>

@@ -15,7 +15,7 @@ const messagesInFrench = {
   visionHead: "Our Vision & Values",
   vision:
     ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
-  readMore: " Read More",
+  readMore: " READ MORE",
   projectsHead: "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES",
   projectsOngoing: "OUR ONGOING PROJECTS",
   projectsOngoingdesc:
@@ -39,7 +39,7 @@ const messagesInFrench = {
   bpositionFive: "CTO",
   ourGroup: "OUR GROUP OF COMPANIES",
   contactUs: "CONTACT US",
-  submit: "Submit",
+  submit: "SUBMIT",
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, ",
   addressTwo: " Sempadapalayam, Karur",
@@ -50,7 +50,7 @@ const messagesInFrench = {
   aboutContent:
     "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
   ourProjects: "Our Projects",
-  clickHere: "click here to explore our projects",
+  clickHere: "CLICK HERE TO EXPLORE OUR PROJECTS",
   csr: "CSR",
 };
 const Content = () => {
@@ -66,9 +66,10 @@ const Content = () => {
               <div className="lg:w-2/6  text-center ">
                 <img
                   alt="..."
-                  src="/img/ceo.jpg"
+                  src="/img/founder.jpg"
                   className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
                 />
+                 <div className="pt-5" >
                 <b>
                   <FormattedMessage
                     id=" founderName"
@@ -81,6 +82,7 @@ const Content = () => {
                     defaultMessage="Founder, Thogai Murugan Builders"
                   />
                 </p>
+                </div>
               </div>
               <div className="lg:w-2/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
                 <p className="font-semibold">
@@ -97,7 +99,7 @@ const Content = () => {
                   >
                     <FormattedMessage
                       id=" readMore"
-                      defaultMessage="Read More"
+                      defaultMessage="READ MORE"
                     />
                   </Link>
                 </div>
@@ -108,6 +110,7 @@ const Content = () => {
                   src="/img/ceo.jpg"
                   className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
                 />
+                 <div className="pt-5" >
                 <b>
                   <FormattedMessage
                     id=" mdName"
@@ -120,6 +123,7 @@ const Content = () => {
                     defaultMessage="MD, Thogai Murugan Builders"
                   />
                 </p>
+                </div>
               </div>
             </div>
           </div>
@@ -143,7 +147,7 @@ const Content = () => {
             >
               <FormattedMessage
                 id="clickHere"
-                defaultMessage="click here to explore our projects"
+                defaultMessage="CLICK HERE TO EXPLORE OUR PROJECTS"
               />
             </Link>
           </div>

@@ -23,7 +23,7 @@ const messagesInFrench = {
   aravaiTypesofplots: "Normal flats & EWS Flats",
   propertyFeatures: "PROPERTY FEATURES",
   contactUs: "CONTACT US",
-  submit: "Submit",
+  submit: "SUBMIT",
   featureRoad: "Bitumen road",
   featureDraiange: "Drainage for all roads",
   featureLights: "Street Lights",
@@ -211,7 +211,7 @@ const Aravakurichi = () => {
       text-sm bg-blue-400 border-blue-600 w-3/4 mt-5 lg:mt-16 lg:ml-8"
                 >
                   <b>
-                    <FormattedMessage id="submit" defaultMessage="Submit" />
+                    <FormattedMessage id="submit" defaultMessage="SUBMIT" />
                   </b>
                 </button>
                 <br />

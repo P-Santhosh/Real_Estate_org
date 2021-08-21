@@ -6,7 +6,7 @@ import BannerCsr from "./BannerCsr";
 const messagesInFrench = {
   
   contactUs: "CONTACT US",
-  submit: "Submit",
+  submit: "SUBMIT",
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, ",
   addressTwo: " Sempadapalayam, Karur",
@@ -56,17 +56,17 @@ const Connect= () => {
                   <br />
                   <label>
                     <textarea
-                      class=" rounded form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block w-3/4"
+                      class=" rounded form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block lg:w-3/4 w-11/12"
                       rows="4"
                       placeholder="Message"
                     ></textarea>
                   </label>
                   <button
                     className="rounded-full border-4 px-16 py-2 font-semibold
-      text-md bg-blue-400 border-blue-600 w-3/4 mt-5"
+      text-md bg-blue-400 border-blue-600 lg:w-3/4  w-11/12 mt-5"
                   >
                     <b>
-                      <FormattedMessage id="submit" defaultMessage="Submit" />
+                      <FormattedMessage id="submit" defaultMessage="SUBMIT" />
                     </b>
                   </button>
                   <br />
@@ -77,7 +77,7 @@ const Connect= () => {
               <img
                 alt="..."
                 src="/img/banner.jpg"
-                className="shadow-lg  mx-auto w-2/4 hover:shadow-2xl"
+                className="shadow-lg  lg:mx-auto mx-6 lg:w-2/4 w-3/4 hover:shadow-2xl"
               />
               <div className="lg:pl-32  lg:px-12 px-6 lg:pt-6  pt-5">
                 <b className="text-xl ">

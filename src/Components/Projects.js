@@ -6,7 +6,7 @@ const messagesInFrench = {
   name: "Thogai Murugan Builders",
   avenuesHead: "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES",
   ongoingProjects: " ONGOING PROJECTS",
-  viewDetails: " View Details ➜",
+  viewDetails: " VIEW DETAILS ➜",
   siteSemone: "Sempadapalayam, Punjai Pugalur",
   siteSemtwo: "Karur",
   siteArthone: " Arthanaripalayam, Paramathi Velur",
@@ -79,7 +79,7 @@ const Projects = () => {
                     >
                       <FormattedMessage
                         id="viewDetails"
-                        defaultMessage="View Details ➜ "
+                        defaultMessage="VIEW DETAILS ➜ "
                       />
                     </Link>
                   </div>
@@ -115,7 +115,7 @@ const Projects = () => {
                   >
                     <FormattedMessage
                       id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                      defaultMessage="VIEW DETAILS ➜ "
                     />
                   </Link>
                 </div>
@@ -154,7 +154,7 @@ const Projects = () => {
                   >
                     <FormattedMessage
                       id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                      defaultMessage="VIEW DETAILS ➜ "
                     />
                   </Link>
                 </div>
@@ -189,7 +189,7 @@ const Projects = () => {
                   >
                     <FormattedMessage
                       id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                      defaultMessage="VIEW DETAILS ➜ "
                     />
                   </Link>
                 </div>
@@ -228,7 +228,7 @@ const Projects = () => {
                   >
                     <FormattedMessage
                       id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                      defaultMessage="VIEW DETAILS ➜ "
                     />
                   </Link>
                 </div>
@@ -263,7 +263,7 @@ const Projects = () => {
                   >
                     <FormattedMessage
                       id="viewDetails"
-                      defaultMessage="View Details ➜ "
+                      defaultMessage="VIEW DETAILS ➜ "
                     />
                   </Link>
                 </div>

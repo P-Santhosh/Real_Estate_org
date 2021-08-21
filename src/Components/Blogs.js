@@ -38,7 +38,7 @@ const Blogs = () => {
                       className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
                   px-6 py-1  "
                     >
-                      Click here see Blog ➜ 
+                     CLICK HERE TO SEE BLOG ➜ 
                     </Link>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const Blogs = () => {
                     className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
                   px-6 py-1  "
                   >
-                    Click here see Blog  ➜
+                    CLICK HERE TO SEE BLOG  ➜
                   </Link>
                 </div>
               </div>

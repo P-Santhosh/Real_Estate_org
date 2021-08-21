@@ -23,7 +23,7 @@ const messagesInFrench = {
   sempadapalayamTypesofplots: "Normal flats & EWS Flats",
   propertyFeatures: "PROPERTY FEATURES",
   contactUs: "CONTACT US",
-  submit: "Submit",
+  submit: "SUBMIT",
   featureRoad: "Bitumen road",
   featureDraiange: "Drainage for all roads",
   featureLights: "Street Lights",
@@ -231,7 +231,7 @@ const Sembadapalayam = () => {
                 >
                   <b>
                     {" "}
-                    <FormattedMessage id="submit" defaultMessage="Submit" />
+                    <FormattedMessage id="submit" defaultMessage="SUBMIT" />
                   </b>
                 </button>
                 <br />

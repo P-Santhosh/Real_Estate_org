@@ -62,10 +62,11 @@ const About = () => {
             <div className="lg:w-3/6  text-center ">
               <img
                 alt="..."
-                src="/img/ceo.jpg"
+                src="/img/founder.jpg"
                 className="shadow-lg rounded-full  w-2/6 hover:shadow-2xl mx-auto"
               />
-              <b>
+              <div className="pt-5" >
+              <b >
                 <FormattedMessage
                   id=" founderName"
                   defaultMessage="Shri.Thogai Murugan "
@@ -77,6 +78,7 @@ const About = () => {
                   defaultMessage="Founder, Thogai Murugan Builders"
                 />
               </p>
+              </div>
             </div>
             <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
               <p className="font-semibold">
@@ -101,6 +103,7 @@ const About = () => {
                 src="/img/ceo.jpg"
                 className="shadow-lg rounded-full  w-2/6 hover:shadow-2xl mx-auto"
               />
+               <div className="pt-5" >
               <b>
               <FormattedMessage
                   id=" ceoName"
@@ -113,6 +116,7 @@ const About = () => {
                   defaultMessage="MD, Thogai Murugan Builders"
                 />
               </p>
+              </div>
             </div>
             <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-3">
               <p className="font-semibold">

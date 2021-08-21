@@ -13,9 +13,12 @@
 }
 
 .slick-arrow::before {
+ 
   font-size: 35px !important;
   color:black !important;
   background-color: #fff !important;
+  border-radius: 50% !important;
+  background-size: cover !important;
 }
 
 
