@@ -34,7 +34,7 @@ const Connect= () => {
                     <input
                       type="text"
                       placeholder=" Name *"
-                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
@@ -42,7 +42,7 @@ const Connect= () => {
                     <input
                       type="email"
                       placeholder="Email "
-                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
@@ -50,20 +50,20 @@ const Connect= () => {
                     <input
                       type="text"
                       placeholder=" Phone Number *"
-                      className="rounded border hover:border-blue-600 mt-5 lg:px-28 px-16 py-3"
+                      className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-28 px-16 py-3"
                     />
                   </label>
                   <br />
                   <label>
                     <textarea
-                      class=" rounded form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block lg:w-3/4 w-11/12"
+                      class=" rounded form-textarea border hover:border-blue-600 lg:px-28 px-16 py-3 mt-5 block lg:w-3/4  w-11/12"
                       rows="4"
                       placeholder="Message"
                     ></textarea>
                   </label>
                   <button
                     className="rounded-full border-4 px-16 py-2 font-semibold
-      text-md bg-blue-400 border-blue-600 lg:w-3/4  w-11/12 mt-5"
+      text-md bg-blue-400 border-blue-600 lg:w-3/4  w-11/12  mt-5"
                   >
                     <b>
                       <FormattedMessage id="submit" defaultMessage="SUBMIT" />

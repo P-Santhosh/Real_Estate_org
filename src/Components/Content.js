@@ -50,7 +50,7 @@ const messagesInFrench = {
   aboutContent:
     "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
   ourProjects: "Our Projects",
-  clickHere: "CLICK HERE TO EXPLORE OUR PROJECTS",
+  clickHere: "CLICK HERE TO EXPLORE PROJECTS",
   csr: "CSR",
 };
 const Content = () => {
@@ -58,7 +58,7 @@ const Content = () => {
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <section>
-          <div className="bg-gray-200 text-gray-700 lg:py-16 px-12 lg:py-12 py-6">
+          <div className="bg-gray-200 text-gray-700 lg:py-16 lg:px-12 px-5 lg:py-12 py-6">
             <p className="text-center text-4xl font-semibold text-gray-800">
               <FormattedMessage id="about" defaultMessage="About Us" />
             </p>
@@ -84,17 +84,17 @@ const Content = () => {
                 </p>
                 </div>
               </div>
-              <div className="lg:w-2/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
+              <div className="lg:w-2/6 text-center text-justify lg:px-6 px-1 lg:mt-1 mt-6">
                 <p className="font-semibold">
                   <FormattedMessage
                     id=" aboutContent"
                     defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
                   />
                 </p>
-                <div className=" py-6  text-gray-900">
+                <div className=" py-6  text-gray-900 lg:text-left  text-center">
                   <Link
                     to="/about"
-                    className="rounded-full border-4 px-20   py-2 font-bold
+                    className="rounded-full border-4 px-20  py-2 font-bold
       text-sm bg-blue-400 border-blue-600   "
                   >
                     <FormattedMessage
@@ -142,12 +142,12 @@ const Content = () => {
           <div className=" py-6  text-gray-900 text-center">
             <Link
               to="/projects"
-              className="rounded-full border-4 lg:px-20 px-5    py-3 font-semibold
-      text-lg bg-blue-400 border-blue-600   "
+              className="rounded-full border-4 lg:px-20 px-6    py-3 font-bold
+       text-sm bg-blue-400 border-blue-600   "
             >
               <FormattedMessage
                 id="clickHere"
-                defaultMessage="CLICK HERE TO EXPLORE OUR PROJECTS"
+                defaultMessage="CLICK HERE To EXPLORE PROJECTS"
               />
             </Link>
           </div>

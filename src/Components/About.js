@@ -80,7 +80,7 @@ const About = () => {
               </p>
               </div>
             </div>
-            <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-6">
+            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-1 mt-6">
               <p className="font-semibold">
                 <FormattedMessage
                   id=" aboutContent"
@@ -118,7 +118,7 @@ const About = () => {
               </p>
               </div>
             </div>
-            <div className="lg:w-3/6 text-center text-justify lg:px-6 px-3 lg:mt-1 mt-3">
+            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-1 mt-3">
               <p className="font-semibold">
                 <FormattedMessage
                   id=" aboutContent"

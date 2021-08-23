@@ -292,7 +292,7 @@ const Projects = () => {
                 <p className="pt-5 font-bold text-center text-2xl hover:text-blue-700">
                   <FormattedMessage
                     id="completedOne"
-                    defaultMessage="   Sempadapalayam,Karur"
+                    defaultMessage="   Sempadapalayam"
                   />
                 </p>
               </div>
