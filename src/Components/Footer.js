@@ -4,7 +4,7 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 import { FiFacebook, FiLinkedin, FiInstagram } from "react-icons/fi";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
-  addressOne: "18, Kadai Veedhi, ",
+  addressOne: "18, Kadai Veedhi ",
   addressTwo: "Sempadapalayam, Karur",
   addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
@@ -26,8 +26,8 @@ class Footer extends React.Component {
   render() {
     return (
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-        <footer className=" bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 text-blue-900  pt-10 lg:p-12 text-center">
-          <section className="lg:py-9">
+        <footer className=" bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 text-blue-900  pt-5 lg:p-12 text-center">
+          <section className="lg:py-5">
             <div className="lg:flex lg:mt-2 mb-6 lg:px-12 px-3">
               <div className="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 ">
                 <div className="px-6">
@@ -87,8 +87,8 @@ class Footer extends React.Component {
                 </p>
               </div>
 
-              <div className="text-left lg:px-32 pl-4 py-2 lg:pt-5 font-bold ">
-                <h2>
+              <div className="text-left lg:px-32 pl-4 py-2  font-bold ">
+                <h2 className="text-lg pb-3">
                   <b>
                     <FormattedMessage
                       id="name"
@@ -112,20 +112,20 @@ class Footer extends React.Component {
                     />
                   </svg>
 
-                  <p className="mb-2 font-medium">
+                  <p className="mb-2 font-medium">&nbsp;&nbsp;
                     <FormattedMessage
                       id="addressOne"
-                      defaultMessage="18, Kadai Veedhi,  "
+                      defaultMessage="18, Kadai Veedhi "
                     />
                   </p>
                 </div>
-                <p className="mb-2 font-medium">
+                <p className="mb-2 font-medium pl-9">
                   <FormattedMessage
                     id="addressTwo"
                     defaultMessage="Sempadapalayam, Karur "
                   />
                 </p>
-                <p className="mb-2 font-medium">
+                <p className="mb-2 font-medium pl-9">
                   <FormattedMessage
                     id="addressThree"
                     defaultMessage="Tamil Nadu 639001 "
@@ -147,7 +147,7 @@ class Footer extends React.Component {
                     />
                   </svg>
                   <p className="mb-2 font-medium items-end ">
-                    <a href="tel:+9442693171">
+                    <a href="tel:+9442693171">&nbsp;&nbsp;&nbsp;
                       <FormattedMessage
                         id="contactOne"
                         defaultMessage="94426-93171 "
@@ -171,7 +171,7 @@ class Footer extends React.Component {
                     />
                   </svg>
 
-                  <p className="mb-2  ">
+                  <p className="mb-2  ">&nbsp;&nbsp;&nbsp;
                     <a href="mailto:thogaimuruganrealestates@gmail.com">
                       thogaimuruganrealestates@gmail.com
                     </a>
@@ -182,7 +182,7 @@ class Footer extends React.Component {
           </section>
           <div className="flex lg:px-96 lg:mx-40 px-20 lg:pb-0 pb-2 lg:py-3">
             <p className="lg:px-6 px-3">
-              <a href="tel:+9442693171">
+              <a href="tel:+9442693171" className="hover:text-green-600">
                 <svg
                   className="w-6 h-6 "
                   fill="none"
@@ -200,7 +200,7 @@ class Footer extends React.Component {
               </a>
             </p>
             <p className="lg:px-6 px-3">
-              <a href="mailto:thogaimuruganrealestates@gmail.com">
+              <a href="mailto:thogaimuruganrealestates@gmail.com" className="hover:text-red-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -218,34 +218,30 @@ class Footer extends React.Component {
               </a>
             </p>
             
-            <p className="lg:px-6 px-3"><a   href="https://www.linkedin.com/company/thogai-murugan-real-estates"  target="blank" > <FiLinkedin /> </a></p>
-            <p className="lg:px-6 px-3"><a   href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiFacebook /> </a></p>
-            <p className="lg:px-6 px-3"><a   href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiInstagram/> </a></p>
+            <p className="lg:px-6 px-3 "><a className="hover:text-blue-600"  href="https://www.linkedin.com/company/thogai-murugan-real-estates"  target="blank" > <FiLinkedin /> </a></p>
+            <p className="lg:px-6 px-3"><a  className="hover:text-blue-400 " href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiFacebook /> </a></p>
+            <p className="lg:px-6 px-3"><a  className="hover:text-pink-600"  href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiInstagram/> </a></p>
           </div>
           <hr></hr>
-          <div className="pb-6 font-bold">
-            <p className="p-3  mt-4">
+          <div className=" font-bold">
+            <p className=" lg:pt-5">
               <FormattedMessage
                 id="copyright"
                 defaultMessage="Copyright 2021 © Thogai Murugan Builders "
-              />
-              <br />
+              /></p>
+             <p>
               <FormattedMessage
                 id="allrights"
                 defaultMessage="All Rights Reserved "
               />
             </p>
-            <a href="https://karurtech.com/" target="blank">
+            <a href="https://karurtech.com/" target="blank" className="hover:text-green-900">
               <FormattedMessage
                 id="kts"
                 defaultMessage="With love of Karur Tech Solution  "
+                
               />
-              <span>
-                <FormattedMessage
-                  id="ktsLink"
-                  defaultMessage=" @karurtech.com "
-                />
-              </span>
+              
             </a>
           </div>
         </footer>

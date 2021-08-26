@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import Bannerhome from "./Bannerhome";
-import BannerCsr from "./BannerCsr";
 import Connect from "./Connect";
+import Grpcmpy from "./Grpcmpy";
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
   founderGoal:
@@ -67,7 +67,7 @@ const Content = () => {
                 <img
                   alt="..."
                   src="/img/founder.jpg"
-                  className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
+                  className=" rounded-full  w-3/6 shadow-2xl mx-auto"
                 />
                  <div className="pt-5" >
                 <b>
@@ -95,7 +95,7 @@ const Content = () => {
                   <Link
                     to="/about"
                     className="rounded-full border-4 px-20  py-2 font-bold
-      text-sm bg-blue-400 border-blue-600   "
+      text-sm bg-blue-400 border-blue-600 hover:bg-white  "
                   >
                     <FormattedMessage
                       id=" readMore"
@@ -108,7 +108,7 @@ const Content = () => {
                 <img
                   alt="..."
                   src="/img/ceo.jpg"
-                  className="shadow-lg rounded-full  w-3/6 hover:shadow-2xl mx-auto"
+                  className=" rounded-full  w-3/6 shadow-2xl mx-auto"
                 />
                  <div className="pt-5" >
                 <b>
@@ -143,7 +143,7 @@ const Content = () => {
             <Link
               to="/projects"
               className="rounded-full border-4 lg:px-20 px-6    py-3 font-bold
-       text-sm bg-blue-400 border-blue-600   "
+       text-sm bg-blue-400 border-blue-600  hover:bg-white "
             >
               <FormattedMessage
                 id="clickHere"
@@ -153,7 +153,7 @@ const Content = () => {
           </div>
         </section>
 
-        <section>
+       {/* <section>
           <div className="text-center lg:px-20 mt-10">
             <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage id="csr" defaultMessage="CSR" />
@@ -162,63 +162,8 @@ const Content = () => {
           <div className="py-12">
             <BannerCsr></BannerCsr>
           </div>
-        </section>
-        <section className="lg:py-12 pt-10">
-          <div className="text-center lg:px-20">
-            <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
-              <FormattedMessage
-                id="ourGroup"
-                defaultMessage="OUR GROUP OF COMPANIES"
-              />
-            </h5>
-          </div>
-          <div className="lg:flex lg:mt-20  mt-6 mb-6">
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
-              <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
-                  <img
-                    alt="..."
-                    src="/img/kgf.png"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
-                  <img
-                    alt="..."
-                    src="/img/kts.jpeg"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <a href="http://finstreetservices.com/" target="blank">
-                  <img
-                    alt="..."
-                    src="/img/finestreet.jpg"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
-                  <img
-                    alt="..."
-                    src="/img/banner.jpg"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+       </section>*/}
+        <Grpcmpy></Grpcmpy>
        <Connect></Connect>
       </IntlProvider>
     </>

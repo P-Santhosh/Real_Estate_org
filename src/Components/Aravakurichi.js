@@ -179,7 +179,7 @@ const Aravakurichi = () => {
                   <input
                     type="text"
                     placeholder=" Name *"
-                    className="rounded border hover:border-blue-600   w-11/12 lg:px-16 px-6 mb-4 p-2 "
+                    className="rounded border hover:border-blue-600   w-11/12  px-5 mb-4 p-2 "
                   />
                 </label>
                 <br />
@@ -187,7 +187,7 @@ const Aravakurichi = () => {
                   <input
                     type="email"
                     placeholder=" Email "
-                    className="rounded border hover:border-blue-600  w-11/12 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600  w-11/12  px-5 mb-4 p-2"
                   />
                 </label>
                 <br />
@@ -195,20 +195,20 @@ const Aravakurichi = () => {
                   <input
                     type="text"
                     placeholder=" Phone Number *"
-                    className="rounded border hover:border-blue-600  w-11/12 lg:px-16 px-6 mb-4 p-2"
+                    className="rounded border hover:border-blue-600  w-11/12 px-5 mb-4 p-2"
                   />
                 </label>
                 <br />
                 <label>
                   <textarea
-                    class="rounded form-textarea border hover:border-blue-600  lg:w-8/9 w-11/12 lg:px-16 px-6 mb-4 p-2"
+                    class="rounded form-textarea border hover:border-blue-600  lg:w-8/9 w-11/12 px-5 mb-4 p-2"
                     rows="6"
                     placeholder="Message"
                   ></textarea>
                 </label>
                 <button
                   className="rounded-full border-4 lg:px-16 px-6 py-2 font-bold
-      text-sm bg-blue-400 border-blue-600 lg:w-3/4 w-11/12 mt-5 lg:mt-16 lg:ml-8"
+      text-sm bg-blue-400 border-blue-600 lg:w-3/4 w-11/12 mt-5 lg:mt-16 lg:ml-8 hover:bg-white"
                 >
                   <b>
                     {" "}

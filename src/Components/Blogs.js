@@ -36,7 +36,7 @@ const Blogs = () => {
                     <Link
                       to="/blogone"
                       className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-6 py-1  "
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white "
                     >
                      CLICK HERE TO SEE BLOG ➜ 
                     </Link>
@@ -61,7 +61,7 @@ const Blogs = () => {
                   <Link
                     to="/blogtwo"
                     className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
-                  px-6 py-1  "
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white "
                   >
                     CLICK HERE TO SEE BLOG  ➜
                   </Link>

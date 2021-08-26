@@ -20,6 +20,13 @@
   border-radius: 50% !important;
   background-size: cover !important;
 }
+.video{
+  height: calc(100% - 100px) !important;
+}
+.Link:focus{
+  color:red;
+}
+
 
 
 /* .slider .slick-prev{

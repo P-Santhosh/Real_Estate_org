@@ -3,7 +3,7 @@ import Footer from "../Components/Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
-  addressOne: "18, Kadai Veedhi, ",
+  addressOne: "18, Kadai Veedhi ",
   addressTwo: "Sempadapalayam, Karur",
   addressThree: "Tamil Nadu 639001",
   contactOne: "94426-93171",
@@ -22,7 +22,7 @@ const Contact = () => {
           />
 
           <div className="center-content lg:pl-64 lg:px-12 px-3  lg:pt-8 pt-2  ">
-            <h2 className="text-xl mb-2">
+            <h2 className="text-xl pb-3 font-bold">
               <FormattedMessage
                 id="name"
                 defaultMessage="Thogai Murugan Builders"
@@ -43,20 +43,21 @@ const Contact = () => {
                   d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                 />
               </svg>
-              <p className="mb-2">
+              <p className="mb-1">
+                &nbsp;&nbsp;
                 <FormattedMessage
                   id="addressOne"
-                  defaultMessage="18, Kadai Veedhi,  "
+                  defaultMessage="18, Kadai Veedhi  "
                 />
               </p>
             </div>
-            <p className="mb-2">
+            <p className="mb-1 pl-9">
               <FormattedMessage
                 id="addressTwo"
                 defaultMessage="Sempadapalayam, Karur "
               />
             </p>
-            <p className="mb-2">
+            <p className="mb-1 pl-9">
               <FormattedMessage
                 id="addressThree"
                 defaultMessage="Tamil Nadu 639001 "
@@ -78,7 +79,8 @@ const Contact = () => {
                 />
               </svg>
 
-              <p className="mb-2  ">
+              <p className="mb-1  ">
+                &nbsp;&nbsp;&nbsp;
                 <a href="tel:+9442693171">
                   <FormattedMessage
                     id="contactOne"
@@ -103,9 +105,10 @@ const Contact = () => {
                 />
               </svg>
 
-              <p className="mb-2 com ">
+              <p className="mb-1 ">
+                &nbsp;&nbsp;&nbsp;
                 <a href="mailto:thogaimuruganrealestates@gmail.com">
-                thogaimuruganrealestates@gmail.com
+                  thogaimuruganrealestates@gmail.com
                 </a>
               </p>
             </div>
@@ -119,7 +122,6 @@ const Contact = () => {
         </p>
         <Footer />
       </IntlProvider>
-      
     </>
   );
 };

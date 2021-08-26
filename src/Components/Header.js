@@ -80,7 +80,7 @@ const Header = ({ toggle }) => {
   return (
     <IntlProvider messages={messagesInFrench} defaultLocale="en">
       <nav
-        className="flex justify-between items-center h-24 bg-white text-black relative shadow-lg lg:pl-24 lg:pr-24  text-lg sticky"
+        className="flex justify-between items-center h-24 bg-white  font-semibold relative shadow-lg lg:pl-24 lg:pr-24  text-lg sticky"
         role="navigation"
       >
         <Link to="/" className="pl-8  ">
@@ -106,29 +106,29 @@ const Header = ({ toggle }) => {
             />
           </svg>
         </div>
-        <div className="pr-8 md:block  hidden ">
-          <Link to="/" className="p-4 hover:text-red-600">
+        <div className="pr-8 md:block  hidden " >
+          <Link to="/" className="p-4 text-blue-900 hover:text-red-600 Link ">
             <FormattedMessage id="home " defaultMessage="Home " />
           </Link>
-          <Link to="/about" className="p-4 hover:text-red-600">
+          <Link to="/about" className="p-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="about " defaultMessage="About Us " />
           </Link>
-          <Link to="/projects" className="p-4 hover:text-red-600">
+          <Link to="/projects" className="p-4   text-blue-900 hover:text-red-600  Link" >
             <FormattedMessage id="projects" defaultMessage="Projects " />
           </Link>
-          <Link to="/blogs" className="p-4 hover:text-red-600">
+          <Link to="/blogs" className="p-4 text-blue-900 hover:text-red-600  Link ">
             <FormattedMessage id="blogs" defaultMessage="Blogs " />
           </Link>
-          <Link to="/csr" className="p-4 hover:text-red-600">
+          {/*<Link to="/csr" className="p-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="csr" defaultMessage="CSR " />
-          </Link>
-          <Link to="/gallery" className="p-4 hover:text-red-600">
+  </Link>*/}
+          <Link to="/gallery" className="p-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="gallery" defaultMessage="Gallery" />
           </Link>
-          <Link to="/contact" className="p-4 hover:text-red-600">
+          <Link to="/contact" className="p-4 text-blue-900 hover:text-red-600  Link ">
             <FormattedMessage id=" contact" defaultMessage=" Contact Us" />
           </Link>
-          <Link to="/disclaimer" className="p-4 hover:text-red-600">
+          <Link to="/disclaimer" className="p-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
           </Link>
         </div>
