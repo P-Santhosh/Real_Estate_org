@@ -56,9 +56,9 @@ function Banner() {
   return (
     <>
     <div >
-      <div className="App ">
-        <video width="100%" height="calc(100vh-90px)" controls autoPlay muted loop>
-          <source src="/img/Tester.mp4" type="video/mp4" />
+      <div className="App  ">
+        <video width="100%" controls autoPlay muted loop>
+          <source src="/img/Test.mp4" type="video/mp4" />
         </video>
       </div>
       </div>
