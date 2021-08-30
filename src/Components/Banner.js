@@ -56,7 +56,7 @@ function Banner() {
   return (
     <>
     <div >
-      <div className="App  ">
+      <div className="App lg:videos  ">
         <video width="100%" controls autoPlay muted loop>
           <source src="/img/Test.mp4" type="video/mp4" />
         </video>
