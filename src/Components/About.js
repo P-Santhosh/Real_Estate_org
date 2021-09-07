@@ -39,6 +39,8 @@ const messagesInFrench = {
   bnameFive: "Santhose Murugan",
   bpositionFive: "CTO",
   ourGroup: "OUR GROUP OF COMPANIES",
+  aboutCont:
+    "Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts. Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal. Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism.",
 };
 const About = () => {
   return (
@@ -81,19 +83,14 @@ const About = () => {
               </p>
               </div>
             </div>
-            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-1 mt-6">
+            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-6 mt-6">
               <p className="font-semibold">
                 <FormattedMessage
-                  id=" aboutContent"
-                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                  id=" aboutCont"
+                  defaultMessage="Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts. Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal. Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism."
                 />
               </p>
-              <p className="font-semibold">
-                <FormattedMessage
-                  id=" aboutContent"
-                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
-                />
-              </p>
+              
             </div>
           </div>
         
@@ -119,17 +116,11 @@ const About = () => {
               </p>
               </div>
             </div>
-            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-1 mt-3">
-              <p className="font-semibold">
+            <div className="lg:w-3/6 text-center text-justify px-6  lg:mt-6 mt-3">
+            <p className="font-semibold">
                 <FormattedMessage
-                  id=" aboutContent"
-                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
-                />
-              </p>
-              <p className="font-semibold">
-                <FormattedMessage
-                  id=" aboutContent"
-                  defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                  id=" aboutCont"
+                  defaultMessage="Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts. Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal. Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism."
                 />
               </p>
             </div>

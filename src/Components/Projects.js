@@ -22,7 +22,7 @@ const messagesInFrench = {
   siteAravaitwo: "Karur",
   completedProjects: "COMPLETED PROJECTS",
   completedOne: " Sempadapalayam,Karur",
-  completedTwo: " Paramathi,Karur",
+  completedTwo: " Saravanampatti,Coimbatore",
 };
 const Projects = () => {
   return (
@@ -387,7 +387,7 @@ const Projects = () => {
                     <p className="pt-3 font-bold text-center text-xl">
                     <FormattedMessage
                     id="completedTwo"
-                    defaultMessage="  Paramathi,Karur"
+                    defaultMessage="  Saravanampatti,Coimbatore"
                   />
                     </p>
                     

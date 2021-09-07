@@ -48,7 +48,7 @@ const messagesInFrench = {
   contactTwo: "97890-63333",
   about: "About Us",
   aboutContent:
-    "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
+    "Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts. Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal. Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism.",
   ourProjects: "Our Projects",
   clickHere: "CLICK HERE TO EXPLORE PROJECTS",
   csr: "CSR",
@@ -69,26 +69,28 @@ const Content = () => {
                   src="/img/founder.jpg"
                   className=" rounded-full  w-3/6 shadow-2xl mx-auto"
                 />
-                 <div className="pt-5" >
-                <b>
-                  <FormattedMessage
-                    id=" founderName"
-                    defaultMessage="Shri.Thogai Murugan "
-                  />
-                </b>
-                <p className="font-medium">
-                  <FormattedMessage
-                    id=" founderPosition"
-                    defaultMessage="Founder, Thogai Murugan Builders"
-                  />
-                </p>
+                <div className="pt-5">
+                  <b>
+                    <FormattedMessage
+                      id=" founderName"
+                      defaultMessage="Shri.Thogai Murugan "
+                    />
+                  </b>
+                  <p className="font-medium">
+                    <FormattedMessage
+                      id=" founderPosition"
+                      defaultMessage="Founder, Thogai Murugan Builders"
+                    />
+                  </p>
                 </div>
               </div>
-              <div className="lg:w-2/6 text-center text-justify lg:px-6 px-1 lg:mt-1 mt-6">
+              <div className="lg:w-2/6 text-center text-justify lg:px-2 px-1 lg:mt-1 mt-6">
                 <p className="font-semibold">
                   <FormattedMessage
                     id=" aboutContent"
-                    defaultMessage="Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city."
+                    defaultMessage="Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts.
+                    Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal.
+                    Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism."
                   />
                 </p>
                 <div className=" py-6  text-gray-900 lg:text-left  text-center">
@@ -110,19 +112,19 @@ const Content = () => {
                   src="/img/ceo.jpg"
                   className=" rounded-full  w-3/6 shadow-2xl mx-auto"
                 />
-                 <div className="pt-5" >
-                <b>
-                  <FormattedMessage
-                    id=" mdName"
-                    defaultMessage="Mr.Santhose Murugan "
-                  />
-                </b>
-                <p className="font-medium">
-                  <FormattedMessage
-                    id=" mdPosition"
-                    defaultMessage="MD, Thogai Murugan Builders"
-                  />
-                </p>
+                <div className="pt-5">
+                  <b>
+                    <FormattedMessage
+                      id=" mdName"
+                      defaultMessage="Mr.Santhose Murugan "
+                    />
+                  </b>
+                  <p className="font-medium">
+                    <FormattedMessage
+                      id=" mdPosition"
+                      defaultMessage="MD, Thogai Murugan Builders"
+                    />
+                  </p>
                 </div>
               </div>
             </div>
@@ -153,7 +155,7 @@ const Content = () => {
           </div>
         </section>
 
-       {/* <section>
+        {/* <section>
           <div className="text-center lg:px-20 mt-10">
             <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
               <FormattedMessage id="csr" defaultMessage="CSR" />
@@ -164,7 +166,7 @@ const Content = () => {
           </div>
        </section>*/}
         <Grpcmpy></Grpcmpy>
-       <Connect></Connect>
+        <Connect></Connect>
       </IntlProvider>
     </>
   );
