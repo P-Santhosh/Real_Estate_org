@@ -16,10 +16,13 @@ const messagesInFrench = {
   sitePatttswo: " Namakkal",
   siteMunnurone: " Munnur, Karur Paramathi",
   siteMunnurtwo: " Karur",
+  siteMunnurPhase: " Munnur Phase 2, Karur Paramathi",
   siteNanaparappuone: " Nanaparappu, Punjai Pugalur",
   siteNanaparapputwo: " Karur",
   siteAravaione: " Aravakurichi",
   siteAravaitwo: "Karur",
+  sitekoodacheri:"Koodacheri,  Paramathi Velur",
+  sitekoodacheritwo:"Namakkal",
   completedProjects: "COMPLETED PROJECTS",
   completedOne: " Sempadapalayam,Karur",
   completedTwo: " Saravanampatti,Coimbatore",
@@ -52,7 +55,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/sembadapalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/sembadapalayam">
                       <img
@@ -61,10 +64,7 @@ const Projects = () => {
                         src="/img/bthree.jpg"
                       />
                     </Link>
-                    <p className=" pt-1 font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 1
-                    </p>
+                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -97,7 +97,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/arthanaripalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/arthanaripalayam">
                       <img
@@ -106,10 +106,7 @@ const Projects = () => {
                         src="/img/bone.jpg"
                       />
                     </Link>
-                    <p className="pt-1  font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 2
-                    </p>
+                   
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -146,7 +143,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/pattasukadi">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/pattasukadi">
                       <img
@@ -155,10 +152,7 @@ const Projects = () => {
                         src="/img/demo.jpg"
                       />
                     </Link>
-                    <p className=" pt-1 font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 3
-                    </p>
+                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -191,7 +185,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/munnur">
                     <p className="pt-1 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/munnur">
                       <img
@@ -200,10 +194,7 @@ const Projects = () => {
                         src="/img/demo2.jpg"
                       />
                     </Link>
-                    <p className=" pt-1 font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 4
-                    </p>
+                   
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -240,7 +231,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/nanaparappu">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/nanaparappu">
                       <img
@@ -249,10 +240,7 @@ const Projects = () => {
                         src="/img/a1.jpg"
                       />
                     </Link>
-                    <p className=" pt-1 font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 5
-                    </p>
+                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -285,7 +273,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   <Link to="/aravakurichi">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     <Link to="/aravakurichi">
                       <img
@@ -294,11 +282,7 @@ const Projects = () => {
                         src="/img/a2.jpg"
                       />
                     </Link>
-                    <p className="pt-1 font-bold text-center text-xl ">
-                      Avenue Number
-                      &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 6
-                    </p>
-
+                    
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
                         id="siteAravaione"
@@ -329,7 +313,93 @@ const Projects = () => {
             </div>
           </section>
           
-          
+          <section>
+            <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/munnurtwo">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/munnurtwo">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/a1.jpg"
+                      />
+                    </Link>
+                    
+
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id="siteMunnurPhase"
+                        defaultMessage="  Munnur Phase 2, Karur Paramathi"
+                      />
+                    </p>
+                    <p className="pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="siteNanaparapputwo"
+                        defaultMessage="Karur"
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/munnurtwo"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/koodacheri">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/koodacheri">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/a2.jpg"
+                      />
+                    </Link>
+                    
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id=" sitekoodacheri"
+                        defaultMessage=" Koodacheri,  Paramathi Velur"
+                      />
+                    </p>
+                    <p className="pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="sitekoodacheritwo"
+                        defaultMessage="Namakkal"
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/koodacheri"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
           
           <div className="text-center lg:pt-6   lg:px-20 ">
             <div className="text-xl p-5">
@@ -348,7 +418,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     
                       <img
@@ -373,7 +443,7 @@ const Projects = () => {
                 <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
                   
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUES
+                      THOGAI MURUGAN AVENUE
                     </p>
                     
                       <img

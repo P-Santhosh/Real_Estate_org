@@ -4,6 +4,7 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 import Bannerhome from "./Bannerhome";
 import Connect from "./Connect";
 import Grpcmpy from "./Grpcmpy";
+
 const messagesInFrench = {
   founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
   founderGoal:
@@ -50,8 +51,23 @@ const messagesInFrench = {
   aboutContent:
     "Thogai Murugan Builders is a Karur based real estate industry, which offers high quality real estate in karur and its surrounding districts. Our company was founded in 2004 and we have created path for many families dream home. Thogai Murugan Builders is one of the leading real estate industry in karur. We are constantly expanding our footprint with elevated lifestyle solutions in Karur and Namakkal. Our motive is to identify and develop properties in karur that inspire and combine customers into group of families with our high quality projects and its excellence. Our aim is to create an everlasting relationship with customer which built on trust, confidence and professionalism.",
   ourProjects: "Our Projects",
-  clickHere: "CLICK HERE TO EXPLORE PROJECTS",
+  clickHere: "CLICK HERE TO SEE MORE",
   csr: "CSR",
+  siteSemone: "Sempadapalayam, Punjai Pugalur",
+  siteSemtwo: "Karur",
+  siteArthone: " Arthanaripalayam, Paramathi Velur",
+  siteArthtwo: "  Namakkal",
+  sitePattsone: " Pattasukadai, Paramathi Velur",
+  sitePatttswo: " Namakkal",
+  siteMunnurone: " Munnur, Karur Paramathi",
+  siteMunnurtwo: " Karur",
+  siteNanaparappuone: " Nanaparappu, Punjai Pugalur",
+  siteNanaparapputwo: " Karur",
+  siteAravaione: " Aravakurichi",
+  siteAravaitwo: "Karur",
+  completedProjects: "COMPLETED PROJECTS",
+  completedOne: " Sempadapalayam,Karur",
+  completedTwo: " Saravanampatti,Coimbatore",
 };
 const Content = () => {
   return (
@@ -84,7 +100,7 @@ const Content = () => {
                   </p>
                 </div>
               </div>
-              <div className="lg:w-2/6 text-center text-justify lg:px-2 px-1 lg:mt-1 mt-6">
+              <div className="lg:w-2/6 text-center text-justify lg:px-2 px-1 lg:mt-1 mt-6 ">
                 <p className="font-semibold">
                   <FormattedMessage
                     id=" aboutContent"
@@ -97,8 +113,10 @@ const Content = () => {
                   <Link
                     to="/about"
                     className="rounded-full border-4 px-20  py-2 font-bold
-      text-sm bg-blue-400 border-blue-600 hover:bg-white  "
+      text-sm bg-blue-400 border-blue-600 hover:bg-blue-900 hover:border-blue-100  hover:text-white  "
+      
                   >
+
                     <FormattedMessage
                       id=" readMore"
                       defaultMessage="READ MORE"
@@ -140,16 +158,191 @@ const Content = () => {
               />
             </h5>
           </div>
-          <Bannerhome></Bannerhome>
+          {/*<Bannerhome></Bannerhome>*/}
+          <section>
+            <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/sembadapalayam">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/sembadapalayam">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/bthree.jpg"
+                      />
+                    </Link>
+                    
+
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id="siteSemone"
+                        defaultMessage="Sempadapalayam, Punjai Pugalur "
+                      />
+                    </p>
+                    <p className="pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="siteSemtwo"
+                        defaultMessage="Karur "
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/sembadapalayam"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/arthanaripalayam">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/arthanaripalayam">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/bone.jpg"
+                      />
+                    </Link>
+                    
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id="siteArthone"
+                        defaultMessage=" Arthanaripalayam, Paramathi Velur "
+                      />
+                    </p>
+                    <p className="lg:pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="siteArthtwo"
+                        defaultMessage="Namakkal "
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/arthanaripalayam"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/nanaparappu">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/nanaparappu">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/a1.jpg"
+                      />
+                    </Link>
+                    
+
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id="siteNanaparappuone"
+                        defaultMessage="  Nanaparappu, Punjai Pugalur "
+                      />
+                    </p>
+                    <p className="pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="siteNanaparapputwo"
+                        defaultMessage="Karur"
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/nanaparappu"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+                  <Link to="/aravakurichi">
+                    <p className="pt-5 font-bold text-center text-3xl underline  ">
+                      THOGAI MURUGAN AVENUE
+                    </p>
+                    <Link to="/aravakurichi">
+                      <img
+                        alt="..."
+                        className="align-middle border-none px-12 py-5   "
+                        src="/img/a2.jpg"
+                      />
+                    </Link>
+                    
+
+                    <p className="pt-3 font-bold text-center text-xl">
+                      <FormattedMessage
+                        id="siteAravaione"
+                        defaultMessage="   Aravakurichi"
+                      />
+                    </p>
+                    <p className="pt-3 font-bold text-center text-xl ">
+                      <FormattedMessage
+                        id="siteAravaitwo"
+                        defaultMessage="  Karur"
+                      />
+                    </p>
+                  </Link>
+                </div>
+                <div className="lg:mt-12 mt-10 text-center">
+                  <Link
+                    to="/aravakurichi"
+                    className="bg-indigo-200 border-b-4 border-t-4 border-indigo-800
+                  px-6 py-1 hover:bg-blue-900  hover:border-blue-100 hover:text-white  "
+                  >
+                    <FormattedMessage
+                      id="viewDetails"
+                      defaultMessage="VIEW DETAILS ➜ "
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
           <div className=" py-6  text-gray-900 text-center">
             <Link
               to="/projects"
               className="rounded-full border-4 lg:px-20 px-6    py-3 font-bold
-       text-sm bg-blue-400 border-blue-600  hover:bg-white "
+       text-sm bg-blue-400 border-blue-600  hover:bg-blue-900 hover:border-blue-100  hover:text-white"
             >
               <FormattedMessage
                 id="clickHere"
-                defaultMessage="CLICK HERE To EXPLORE PROJECTS"
+                defaultMessage="CLICK HERE TO SEE MORE"
               />
             </Link>
           </div>

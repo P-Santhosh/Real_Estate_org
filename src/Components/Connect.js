@@ -60,7 +60,7 @@ const Connect= () => {
                   </label>
                   <button
                     className="rounded-full border-4 px-16 py-2 font-semibold
-      text-md bg-blue-400 border-blue-600 lg:w-3/4  w-11/12 hover:bg-white mt-5"
+      text-md bg-blue-400 border-blue-600 lg:w-3/4  w-11/12 hover:bg-blue-900 hover:border-blue-100  hover:text-white mt-5"
                   >
                     <b>
                       <FormattedMessage id="submit" defaultMessage="SUBMIT" />

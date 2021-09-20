@@ -37,6 +37,8 @@ import Disclaimer from "./Components/Disclaimer";
 import Csr from "./Components/Csr";
 import Blogone from "./Components/Blogone";
 import Blogtwo from "./Components/Blogtwo";
+import Munnurtwo from "./Components/Munnurtwo";
+import Koodacheri from "./Components/Koodacheri";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,32 +63,32 @@ function App() {
 
   return (
     <>
-    <Router>
-      <div>
-      <Header toggle={toggle} />
-      <Dropdown isOpen={isOpen} toggle={toggle} />
-      
+      <Router>
+        <div>
+          <Header toggle={toggle} />
+          <Dropdown isOpen={isOpen} toggle={toggle} />
 
-      <Switch>
-        <Route  exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/blogs" component={Blogs} />
-        <Route path="/gallery" component={Gallery} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/sembadapalayam" component={Sembadapalayam} />
-        <Route path="/arthanaripalayam" component={Arthanaripalayam} />
-        <Route path="/pattasukadi" component={Pattasukadi} />
-        <Route path="/munnur" component={Munnur} />
-        <Route path="/nanaparappu" component={Nanaparappu} />
-        <Route path="/aravakurichi" component={Aravakurichi} />
-        <Route path="/disclaimer" component={Disclaimer} />
-        <Route path="/csr" component={Csr} />
-        <Route path="/blogone" component={Blogone} />
-        <Route path="/blogtwo" component={Blogtwo} />
-      </Switch>
-
-      </div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/blogs" component={Blogs} />
+            <Route path="/gallery" component={Gallery} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/sembadapalayam" component={Sembadapalayam} />
+            <Route path="/arthanaripalayam" component={Arthanaripalayam} />
+            <Route path="/pattasukadi" component={Pattasukadi} />
+            <Route path="/munnur" component={Munnur} />
+            <Route path="/munnurtwo" component={Munnurtwo} />
+            <Route path="/nanaparappu" component={Nanaparappu} />
+            <Route path="/aravakurichi" component={Aravakurichi} />
+            <Route path="/koodacheri" component={Koodacheri} />
+            <Route path="/disclaimer" component={Disclaimer} />
+            <Route path="/csr" component={Csr} />
+            <Route path="/blogone" component={Blogone} />
+            <Route path="/blogtwo" component={Blogtwo} />
+          </Switch>
+        </div>
       </Router>
     </>
   );

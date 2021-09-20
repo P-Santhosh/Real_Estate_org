@@ -11,7 +11,7 @@ const messagesInFrench = {
   contactTwo: "97890-63333",
   copyright: "Copyright 2021 © Thogai Murugan Builders",
   allrights: "All Rights Reserved",
-  kts: "With love of Karur Tech Solution",
+  kts: "Made by love 💙 Karur Tech Solution",
   ktsLink: "@karurtech.com",
   home: "Home",
   about: "About Us",
@@ -62,11 +62,11 @@ class Footer extends React.Component {
                     <FormattedMessage id="blogs" defaultMessage="Blogs " />
                   </Link>
                 </p>
-                <p>
+                {/*<p>
                   <Link to="/csr" className="p-4 hover:text-red-600">
                     <FormattedMessage id="csr" defaultMessage="CSR " />
                   </Link>
-                </p>
+                </p>*/}
                 <p>
                   <Link to="/gallery" className="p-4 hover:text-red-600">
                     <FormattedMessage id="gallery" defaultMessage="Gallery" />
@@ -112,7 +112,8 @@ class Footer extends React.Component {
                     />
                   </svg>
 
-                  <p className="mb-2 font-medium">&nbsp;&nbsp;
+                  <p className="mb-2 font-medium">
+                    &nbsp;&nbsp;
                     <FormattedMessage
                       id="addressOne"
                       defaultMessage="18, Kadai Veedhi "
@@ -147,7 +148,8 @@ class Footer extends React.Component {
                     />
                   </svg>
                   <p className="mb-2 font-medium items-end ">
-                    <a href="tel:+9442693171">&nbsp;&nbsp;&nbsp;
+                    <a href="tel:+9442693171">
+                      &nbsp;&nbsp;&nbsp;
                       <FormattedMessage
                         id="contactOne"
                         defaultMessage="94426-93171 "
@@ -171,7 +173,8 @@ class Footer extends React.Component {
                     />
                   </svg>
 
-                  <p className="mb-2  ">&nbsp;&nbsp;&nbsp;
+                  <p className="mb-2  ">
+                    &nbsp;&nbsp;&nbsp;
                     <a href="mailto:thogaimuruganrealestates@gmail.com">
                       thogaimuruganrealestates@gmail.com
                     </a>
@@ -200,7 +203,10 @@ class Footer extends React.Component {
               </a>
             </p>
             <p className="lg:px-6 px-3">
-              <a href="mailto:thogaimuruganrealestates@gmail.com" className="hover:text-red-600">
+              <a
+                href="mailto:thogaimuruganrealestates@gmail.com"
+                className="hover:text-red-600"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -217,31 +223,67 @@ class Footer extends React.Component {
                 </svg>
               </a>
             </p>
-            
-            <p className="lg:px-6 px-3 "><a className="hover:text-blue-600"  href="https://www.linkedin.com/company/thogai-murugan-real-estates"  target="blank" > <FiLinkedin /> </a></p>
-            <p className="lg:px-6 px-3"><a  className="hover:text-blue-400 " href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiFacebook /> </a></p>
-            <p className="lg:px-6 px-3"><a  className="hover:text-pink-600"  href="https://www.facebook.com/thogaimuruganbuilders/"  target="blank"  > <FiInstagram/> </a></p>
+
+            <p className="lg:px-6 px-3 ">
+              <a
+                className="hover:text-blue-600"
+                href="https://www.linkedin.com/company/thogai-murugan-real-estates"
+                target="blank"
+              >
+                {" "}
+                <FiLinkedin />{" "}
+              </a>
+            </p>
+            <p className="lg:px-6 px-3">
+              <a
+                className="hover:text-blue-400 "
+                href="https://www.facebook.com/thogaimuruganbuilders/"
+                target="blank"
+              >
+                {" "}
+                <FiFacebook />{" "}
+              </a>
+            </p>
+            <p className="lg:px-6 px-3">
+              <a
+                className="hover:text-pink-600"
+                href="https://instagram.com/thogaimuruganbuilders?utm_medium=copy_link"
+                target="blank"
+              >
+                {" "}
+                <FiInstagram />{" "}
+              </a>
+            </p>
           </div>
           <hr></hr>
-          <div className=" font-bold">
-            <p className=" lg:pt-5">
+          <div className=" font-bold ">
+            <p className=" lg:pt-5 text-lg hover:text-green-600">
+              <a href="tel:+0444-627-6233">
+                {" "}
+                Toll Free&nbsp; @&nbsp; 0444-627-6233{" "}
+              </a>
+            </p>
+            <p>
               <FormattedMessage
                 id="copyright"
                 defaultMessage="Copyright 2021 © Thogai Murugan Builders "
-              /></p>
-             <p>
+              />
+            </p>
+            <p>
               <FormattedMessage
                 id="allrights"
                 defaultMessage="All Rights Reserved "
               />
             </p>
-            <a href="https://karurtech.com/" target="blank" className="hover:text-green-900">
+            <a
+              href="https://karurtech.com/"
+              target="blank"
+              className="hover:text-green-900"
+            >
               <FormattedMessage
                 id="kts"
-                defaultMessage="With love of Karur Tech Solution  "
-                
+                defaultMessage="Made by love 💙   Karur Tech Solution  "
               />
-              
             </a>
           </div>
         </footer>
