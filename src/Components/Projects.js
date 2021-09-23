@@ -21,8 +21,8 @@ const messagesInFrench = {
   siteNanaparapputwo: " Karur",
   siteAravaione: " Aravakurichi",
   siteAravaitwo: "Karur",
-  sitekoodacheri:"Koodacheri,  Paramathi Velur",
-  sitekoodacheritwo:"Namakkal",
+  sitekoodacheri: "Koodacheri,  Paramathi Velur",
+  sitekoodacheritwo: "Namakkal",
   completedProjects: "COMPLETED PROJECTS",
   completedOne: " Sempadapalayam,Karur",
   completedTwo: " Saravanampatti,Coimbatore",
@@ -51,8 +51,8 @@ const Projects = () => {
           </div>
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/sembadapalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -64,7 +64,6 @@ const Projects = () => {
                         src="/img/bthree.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -93,8 +92,8 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/arthanaripalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -106,7 +105,6 @@ const Projects = () => {
                         src="/img/bone.jpg"
                       />
                     </Link>
-                   
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -139,8 +137,8 @@ const Projects = () => {
           </section>
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/pattasukadi">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -152,7 +150,6 @@ const Projects = () => {
                         src="/img/demo.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -181,8 +178,8 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/munnur">
                     <p className="pt-1 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -194,7 +191,6 @@ const Projects = () => {
                         src="/img/demo2.jpg"
                       />
                     </Link>
-                   
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -227,8 +223,8 @@ const Projects = () => {
           </section>
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/nanaparappu">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -240,7 +236,6 @@ const Projects = () => {
                         src="/img/a1.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -269,8 +264,8 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/aravakurichi">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -282,7 +277,7 @@ const Projects = () => {
                         src="/img/a2.jpg"
                       />
                     </Link>
-                    
+
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
                         id="siteAravaione"
@@ -312,11 +307,11 @@ const Projects = () => {
               </div>
             </div>
           </section>
-          
+
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/munnurtwo">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -328,7 +323,6 @@ const Projects = () => {
                         src="/img/a1.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -357,8 +351,8 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/koodacheri">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -370,7 +364,7 @@ const Projects = () => {
                         src="/img/a2.jpg"
                       />
                     </Link>
-                    
+
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
                         id=" sitekoodacheri"
@@ -400,7 +394,7 @@ const Projects = () => {
               </div>
             </div>
           </section>
-          
+
           <div className="text-center lg:pt-6   lg:px-20 ">
             <div className="text-xl p-5">
               <b>
@@ -414,60 +408,48 @@ const Projects = () => {
           </div>
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
-                  
-                    <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUE
-                    </p>
-                    
-                      <img
-                        alt="..."
-                        className="align-middle border-none px-12 py-5   "
-                        src="/img/a5.png"
-                      />
-                  
-                  
-                    <p className="pt-3 font-bold text-center text-xl">
-                    <FormattedMessage
-                    id="completedOne"
-                    defaultMessage="   Sempadapalayam"
-                  />
-                    </p>
-                    
-               
-                </div>
-               
-              </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
-                  
-                    <p className="pt-5 font-bold text-center text-3xl underline  ">
-                      THOGAI MURUGAN AVENUE
-                    </p>
-                    
-                      <img
-                        alt="..."
-                        className="align-middle border-none px-12 py-5   "
-                        src="/img/a6.png"
-                      />
-                  
-                    
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
+                  <p className="pt-5 font-bold text-center text-3xl underline  ">
+                    THOGAI MURUGAN AVENUE
+                  </p>
 
-                    <p className="pt-3 font-bold text-center text-xl">
-                    <FormattedMessage
-                    id="completedTwo"
-                    defaultMessage="  Saravanampatti,Coimbatore"
+                  <img
+                    alt="..."
+                    className="align-middle border-none px-12 py-5   "
+                    src="/img/a5.png"
                   />
-                    </p>
-                    
-                  
+
+                  <p className="pt-3 font-bold text-center text-xl">
+                    <FormattedMessage
+                      id="completedOne"
+                      defaultMessage="   Sempadapalayam"
+                    />
+                  </p>
                 </div>
-               
+              </div>
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
+                  <p className="pt-5 font-bold text-center text-3xl underline  ">
+                    THOGAI MURUGAN AVENUE
+                  </p>
+
+                  <img
+                    alt="..."
+                    className="align-middle border-none px-12 py-5   "
+                    src="/img/a6.png"
+                  />
+
+                  <p className="pt-3 font-bold text-center text-xl">
+                    <FormattedMessage
+                      id="completedTwo"
+                      defaultMessage="  Saravanampatti,Coimbatore"
+                    />
+                  </p>
+                </div>
               </div>
             </div>
           </section>
-         
         </div>
         <Footer></Footer>
       </IntlProvider>

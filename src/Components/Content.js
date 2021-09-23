@@ -161,8 +161,8 @@ const Content = () => {
           {/*<Bannerhome></Bannerhome>*/}
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/sembadapalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -203,8 +203,8 @@ const Content = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/arthanaripalayam">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -248,8 +248,8 @@ const Content = () => {
           </section>
           <section>
             <div className="lg:flex lg:px-12 px-6 lg:py-12 py-6">
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5  ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/nanaparappu">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE
@@ -290,8 +290,8 @@ const Content = () => {
                   </Link>
                 </div>
               </div>
-              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 transform hover:scale-110">
-                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center">
+              <div className="lg:w-3/6 lg:px-12 lg:py-1 py-5 lg:pt-0 pt-12 ">
+                <div className="bg-blue-100 hover:bg-blue-600 hover:text-white text-blue-900 hover:shadow-2xl py-10 text-center transform hover:scale-110 duration-700 ease-in-out">
                   <Link to="/aravakurichi">
                     <p className="pt-5 font-bold text-center text-3xl underline  ">
                       THOGAI MURUGAN AVENUE

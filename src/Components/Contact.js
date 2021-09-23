@@ -107,8 +107,8 @@ const Contact = () => {
 
               <p className="mb-1 ">
                 &nbsp;&nbsp;&nbsp;
-                <a href="mailto:thogaimuruganrealestates@gmail.com">
-                  thogaimuruganrealestates@gmail.com
+                <a href="mailto:thogaimuruganbuilders@gmail.com">
+                thogaimuruganbuilders@gmail.com
                 </a>
               </p>
             </div>

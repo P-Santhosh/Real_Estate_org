@@ -22,10 +22,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-
+import Favicon from 'react-favicon';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Favicon url='http://thogaimurugan.com/img/logo.jpg' />
       <App />
     </BrowserRouter>
   </React.StrictMode>,

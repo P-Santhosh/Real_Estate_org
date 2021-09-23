@@ -107,28 +107,28 @@ const Header = ({ toggle }) => {
           </svg>
         </div>
         <div className="pr-8 md:block  hidden " >
-          <Link to="/" className="p-4 text-blue-900 hover:text-red-600 Link ">
+          <Link to="/" className="px-4 text-blue-900 hover:text-red-600 Link ">
             <FormattedMessage id="home " defaultMessage="Home " />
           </Link>
-          <Link to="/about" className="p-4 text-blue-900 hover:text-red-600 Link">
+          <Link to="/about" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="about " defaultMessage="About Us " />
           </Link>
-          <Link to="/projects" className="p-4   text-blue-900 hover:text-red-600  Link" >
+          <Link to="/projects" className="px-4  text-blue-900 hover:text-red-600  Link" >
             <FormattedMessage id="projects" defaultMessage="Projects " />
           </Link>
-          <Link to="/blogs" className="p-4 text-blue-900 hover:text-red-600  Link ">
+          <Link to="/blogs" className="px-4 text-blue-900 hover:text-red-600  Link ">
             <FormattedMessage id="blogs" defaultMessage="Blogs " />
           </Link>
-          {/*<Link to="/csr" className="p-4 text-blue-900 hover:text-red-600 Link">
+          {/*<Link to="/csr" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="csr" defaultMessage="CSR " />
   </Link>*/}
-          <Link to="/gallery" className="p-4 text-blue-900 hover:text-red-600 Link">
+          <Link to="/gallery" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="gallery" defaultMessage="Gallery" />
           </Link>
-          <Link to="/contact" className="p-4 text-blue-900 hover:text-red-600  Link ">
+          <Link to="/contact" className="px-4 text-blue-900 hover:text-red-600  Link ">
             <FormattedMessage id=" contact" defaultMessage=" Contact Us" />
           </Link>
-          <Link to="/disclaimer" className="p-4 text-blue-900 hover:text-red-600 Link">
+          <Link to="/disclaimer" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
           </Link>
         </div>

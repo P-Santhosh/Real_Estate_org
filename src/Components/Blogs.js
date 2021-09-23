@@ -21,7 +21,7 @@ const Blogs = () => {
                   <Link to="/blogone">
                     <img
                       alt="..."
-                      className="align-middle border-none   transform hover:scale-110 "
+                      className="align-middle border-none   transform hover:scale-110  duration-700 ease-in-out "
                       src="/img/demo1.jpg"
                     />
                   </Link>
@@ -47,7 +47,7 @@ const Blogs = () => {
                 <Link to="/blogtwo">
                   <img
                     alt="..."
-                    className="align-middle border-none   transform hover:scale-110"
+                    className="align-middle border-none   transform hover:scale-110 duration-700 ease-in-out"
                     src="/img/one.jpg"
                   />
                 </Link>

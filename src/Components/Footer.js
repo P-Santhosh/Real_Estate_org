@@ -26,12 +26,12 @@ class Footer extends React.Component {
   render() {
     return (
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-        <footer className=" bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 text-blue-900  pt-5 lg:p-12 text-center">
+        <footer className=" bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 text-blue-900   py-6 lg:p-12   text-center">
           <section className="lg:py-5">
             <div className="lg:flex lg:mt-2 mb-6 lg:px-12 px-3">
               <div className="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 ">
                 <div className="px-6">
-                  <a href="https://karurtech.com/" target="_blank ">
+                  <a >
                     <img
                       alt="..."
                       src="/img/banner.jpg"
@@ -42,15 +42,15 @@ class Footer extends React.Component {
               </div>
               <div className="text-left lg:pl-32 lg:pr-12 lg:px-6  text-xl font-medium">
                 <p>
-                  <Link to="/" className="p-4 hover:text-red-600">
+                  <Link to="/" className="px-4 hover:text-red-600">
                     <FormattedMessage id="home " defaultMessage="Home " />
                   </Link>
                 </p>
-                <Link to="/about" className="p-4 hover:text-red-600">
+                <Link to="/about" className="px-4 hover:text-red-600">
                   <FormattedMessage id="about " defaultMessage="About Us " />
                 </Link>
                 <p>
-                  <Link to="/projects" className="p-4 hover:text-red-600">
+                  <Link to="/projects" className="px-4 hover:text-red-600">
                     <FormattedMessage
                       id="projects"
                       defaultMessage="Projects "
@@ -58,27 +58,27 @@ class Footer extends React.Component {
                   </Link>
                 </p>
                 <p>
-                  <Link to="/blogs" className="p-4 hover:text-red-600">
+                  <Link to="/blogs" className="px-4 hover:text-red-600">
                     <FormattedMessage id="blogs" defaultMessage="Blogs " />
                   </Link>
                 </p>
                 {/*<p>
-                  <Link to="/csr" className="p-4 hover:text-red-600">
+                  <Link to="/csr" className="px-4 hover:text-red-600">
                     <FormattedMessage id="csr" defaultMessage="CSR " />
                   </Link>
                 </p>*/}
                 <p>
-                  <Link to="/gallery" className="p-4 hover:text-red-600">
+                  <Link to="/gallery" className="px-4 hover:text-red-600">
                     <FormattedMessage id="gallery" defaultMessage="Gallery" />
                   </Link>
                 </p>
                 <p>
-                  <Link to="/contact" className="p-4 hover:text-red-600">
+                  <Link to="/contact" className="px-4 hover:text-red-600">
                     <FormattedMessage id=" contact" defaultMessage=" Contact" />
                   </Link>
                 </p>
                 <p>
-                  <Link to="/disclaimer" className="p-4 hover:text-red-600">
+                  <Link to="/disclaimer" className="px-4 hover:text-red-600">
                     <FormattedMessage
                       id="disclaimer"
                       defaultMessage=" Disclaimer"
@@ -175,8 +175,8 @@ class Footer extends React.Component {
 
                   <p className="mb-2  ">
                     &nbsp;&nbsp;&nbsp;
-                    <a href="mailto:thogaimuruganrealestates@gmail.com">
-                      thogaimuruganrealestates@gmail.com
+                    <a href="mailto:thogaimuruganbuilders@gmail.com">
+                    thogaimuruganbuilders@gmail.com
                     </a>
                   </p>
                 </div>
@@ -204,7 +204,7 @@ class Footer extends React.Component {
             </p>
             <p className="lg:px-6 px-3">
               <a
-                href="mailto:thogaimuruganrealestates@gmail.com"
+                href="mailto:thogaimuruganbuilders@gmail.com"
                 className="hover:text-red-600"
               >
                 <svg
@@ -257,19 +257,19 @@ class Footer extends React.Component {
           </div>
           <hr></hr>
           <div className=" font-bold ">
-            <p className=" lg:pt-5 text-lg hover:text-green-600">
-              <a href="tel:+0444-627-6233">
+            <p className=" lg:pt-5 pt-2  text-lg ">
+              <a href="tel:+0444-627-6233" className="hover:text-green-600">
                 {" "}
                 Toll Free&nbsp; @&nbsp; 0444-627-6233{" "}
               </a>
             </p>
-            <p>
+            <p className="pt-2">
               <FormattedMessage
                 id="copyright"
                 defaultMessage="Copyright 2021 © Thogai Murugan Builders "
               />
             </p>
-            <p>
+            <p className="py-2 ">
               <FormattedMessage
                 id="allrights"
                 defaultMessage="All Rights Reserved "
@@ -278,7 +278,7 @@ class Footer extends React.Component {
             <a
               href="https://karurtech.com/"
               target="blank"
-              className="hover:text-green-900"
+              className="hover:text-green-900  "
             >
               <FormattedMessage
                 id="kts"
