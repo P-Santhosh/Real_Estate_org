@@ -39,7 +39,8 @@ import Blogone from "./Components/Blogone";
 import Blogtwo from "./Components/Blogtwo";
 import Munnurtwo from "./Components/Munnurtwo";
 import Koodacheri from "./Components/Koodacheri";
-import Favicon from "./Favicon";
+import Favicon from "./Components/Favicon";
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
