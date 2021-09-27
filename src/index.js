@@ -26,7 +26,7 @@ import Favicon from 'react-favicon';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Favicon url='http://thogaimurugan.com/img/logo.jpg' />
+    <Favicon url='https://thogai-murugan-builders.web.app/img/favicon.jpg' />
     <head>ThogaiMurugan Builders</head>
     
       <App />
