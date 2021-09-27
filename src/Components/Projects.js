@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
@@ -27,8 +27,13 @@ const messagesInFrench = {
   completedOne: " Sempadapalayam,Karur",
   completedTwo: " Saravanampatti,Coimbatore",
 };
+
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+ });
   return (
+    
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
         <div>

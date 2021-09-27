@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import Bannerhome from "./Bannerhome";
@@ -70,6 +70,9 @@ const messagesInFrench = {
   completedTwo: " Saravanampatti,Coimbatore",
 };
 const Content = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -114,9 +117,7 @@ const Content = () => {
                     to="/about"
                     className="rounded-full border-4 px-20  py-2 font-bold
       text-sm bg-blue-400 border-blue-600 hover:bg-blue-900 hover:border-blue-100  hover:text-white  "
-      
                   >
-
                     <FormattedMessage
                       id=" readMore"
                       defaultMessage="READ MORE"
@@ -174,7 +175,6 @@ const Content = () => {
                         src="/img/bthree.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -216,7 +216,7 @@ const Content = () => {
                         src="/img/bone.jpg"
                       />
                     </Link>
-                    
+
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
                         id="siteArthone"
@@ -261,7 +261,6 @@ const Content = () => {
                         src="/img/a1.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage
@@ -303,7 +302,6 @@ const Content = () => {
                         src="/img/a2.jpg"
                       />
                     </Link>
-                    
 
                     <p className="pt-3 font-bold text-center text-xl">
                       <FormattedMessage

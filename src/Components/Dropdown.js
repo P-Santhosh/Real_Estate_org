@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
@@ -9,9 +9,12 @@ const messagesInFrench = {
   gallery: "Gallery",
   contact: " Contact",
   disclaimer: "Disclaimer",
-  csr:"CSR",
+  csr: "CSR",
 };
 const Dropdown = ({ isOpen, toggle }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <IntlProvider messages={messagesInFrench} defaultLocale="en">
       <div
@@ -34,7 +37,7 @@ const Dropdown = ({ isOpen, toggle }) => {
         <Link to="/blogs" className="p-4 hover:text-red-600 Link">
           <FormattedMessage id="blogs" defaultMessage="Blogs " />
         </Link>
-       {/* <Link to="/csr" className="p-4 hover:text-red-600  Link">
+        {/* <Link to="/csr" className="p-4 hover:text-red-600  Link">
             <FormattedMessage id="csr" defaultMessage="CSR " />
       </Link>*/}
         <Link to="/gallery" className="p-4 hover:text-red-600  Link">
@@ -44,8 +47,8 @@ const Dropdown = ({ isOpen, toggle }) => {
           <FormattedMessage id=" contact" defaultMessage=" Contact" />
         </Link>
         <Link to="/disclaimer" className="p-4 hover:text-red-600  Link">
-            <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
-          </Link>
+          <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
+        </Link>
       </div>
     </IntlProvider>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
@@ -31,6 +31,9 @@ const messagesInFrench = {
   featureDtcp: "DTCP approval for all flats",
 };
 const Aravakurichi = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">

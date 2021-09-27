@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="py-10">
@@ -38,7 +41,6 @@ const Gallery = () => {
             <img alt="..." src="/img/demo2.jpg" />
           </div>
         </div>
-        
       </div>
       <Footer></Footer>
     </>

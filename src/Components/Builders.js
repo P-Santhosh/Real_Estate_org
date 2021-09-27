@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 
 const Builders = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <p className="p-32"> Builders</p>

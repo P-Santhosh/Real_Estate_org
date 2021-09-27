@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "../Components/Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
@@ -10,6 +10,9 @@ const messagesInFrench = {
   contactTwo: "97890-63333",
 };
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -108,7 +111,7 @@ const Contact = () => {
               <p className="mb-1 ">
                 &nbsp;&nbsp;&nbsp;
                 <a href="mailto:thogaimuruganbuilders@gmail.com">
-                thogaimuruganbuilders@gmail.com
+                  thogaimuruganbuilders@gmail.com
                 </a>
               </p>
             </div>

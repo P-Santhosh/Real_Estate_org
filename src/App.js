@@ -39,6 +39,7 @@ import Blogone from "./Components/Blogone";
 import Blogtwo from "./Components/Blogtwo";
 import Munnurtwo from "./Components/Munnurtwo";
 import Koodacheri from "./Components/Koodacheri";
+import Favicon from "./Favicon";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -87,6 +88,7 @@ function App() {
             <Route path="/csr" component={Csr} />
             <Route path="/blogone" component={Blogone} />
             <Route path="/blogtwo" component={Blogtwo} />
+            <Route path="/favicon" component={Favicon} />
           </Switch>
         </div>
       </Router>

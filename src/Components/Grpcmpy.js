@@ -4,13 +4,11 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 
 const messagesInFrench = {
   ourGroup: "OUR GROUP OF COMPANIES",
-  
 };
 const Grpcmpy = () => {
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-       
         <section className="lg:py-12 pt-10">
           <div className="text-center lg:px-20">
             <h5 className="lg:text-3xl text-2xl font-semibold pb-2  bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 py-3">
@@ -67,7 +65,6 @@ const Grpcmpy = () => {
             </div>
           </div>
         </section>
-      
       </IntlProvider>
     </>
   );

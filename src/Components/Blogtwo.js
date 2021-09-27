@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 import Connect from "./Connect";
 const Blogtwo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="text-center lg:pt-12 lg:pb-12 lg:px-20 ">
@@ -29,12 +32,24 @@ const Blogtwo = () => {
         </p>
 
         <p className="text-xl font-semibold pt-5">PROPERTY FEATURES</p>
-        <p><span>1 )</span> Massive concrete Arch</p>
-        <p><span>2 )</span>Bitumen road</p>
-        <p><span>3 )</span>Drainage for all roads</p>
-        <p><span>4 )</span>Street Lights</p>
-        <p><span>5 )</span>Park facilities</p>
-        <p><span>6 )</span>DTCP approval for all flats</p>
+        <p>
+          <span>1 )</span> Massive concrete Arch
+        </p>
+        <p>
+          <span>2 )</span>Bitumen road
+        </p>
+        <p>
+          <span>3 )</span>Drainage for all roads
+        </p>
+        <p>
+          <span>4 )</span>Street Lights
+        </p>
+        <p>
+          <span>5 )</span>Park facilities
+        </p>
+        <p>
+          <span>6 )</span>DTCP approval for all flats
+        </p>
 
         <p className="text-xl font-semibold pt-5">Document Clearance</p>
         <p>
@@ -61,7 +76,7 @@ const Blogtwo = () => {
           defects.
         </p>
       </div>
-     <Connect></Connect>
+      <Connect></Connect>
       <Footer></Footer>
     </>
   );

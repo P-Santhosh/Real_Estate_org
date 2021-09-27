@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
@@ -8,6 +8,9 @@ const messagesInFrench = {
 };
 
 const Disclaimer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">

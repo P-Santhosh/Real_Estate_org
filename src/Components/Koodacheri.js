@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
@@ -32,6 +32,9 @@ const messagesInFrench = {
   featureArch: "Massive concrete Arch",
 };
 const Koodacheri = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -68,8 +71,7 @@ const Koodacheri = () => {
                     <FormattedMessage
                       id="koodacheriAddressone"
                       defaultMessage="Koodacheri "
-                    />
-                    {" "}
+                    />{" "}
                     <FormattedMessage
                       id="koodacheriAddresstwo"
                       defaultMessage=" Paramathi Velur,Namakkal "

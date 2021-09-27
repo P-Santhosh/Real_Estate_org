@@ -46,3 +46,14 @@ video{
     font-size: 35px;
     color: black;
    } */
+   .navbar {
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    
+    z-index:1;
+  }
+  
+  
+  

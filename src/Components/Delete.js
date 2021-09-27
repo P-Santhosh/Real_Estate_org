@@ -1,62 +1,65 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
-    founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
-    founderGoal:
-      "Achievements become routine if dreams are backed by the desire to reach them.",
-    founderName: "Shri.Thogai Murugan ",
-    founderPosition: "Founder, Thogai Murugan Builders",
-    mdName: "Mr.Santhose Murugan",
-    mdPosition: "MD, Thogai Murugan Builders",
-    visionHead: "Our Vision & Values",
-    vision:
-      ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
-    readMore: " Read More",
-    projectsHead: "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES",
-    projectsOngoing: "OUR ONGOING PROJECTS",
-    projectsOngoingdesc:
-      ' "Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.',
-    viewAll: " View All ➜",
-    projectsCompleted: "OUR COMPLETED PROJECTS",
-    projectsCompleteddesc:
-      ' "Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.',
-    managementHead: "THOGAI MURUGAN BUILDERS MANAGEMENTS",
-    managementGoal:
-      " Achievements become a routine if dreams are backed by the desir to reach them.",
-    bnameOne: "Shri.Thogai Murugan",
-    bpositionOne: "Founder",
-    bnameTwo: "Santhose Murugan",
-    bpositionTwo: " CHAIRMAN",
-    bnameThree: "Santhose Murugan",
-    bpositionThree: "MANAGING DIRECTOR",
-    bnameFour: "Santhose Murugan",
-    bpositionFour: "CEO",
-    bnameFive: "Santhose Murugan",
-    bpositionFive: "CTO",
-    ourGroup: "OUR GROUP OF COMPANIES",
-    contactUs: "CONTACT US",
-    submit: "Submit",
-    name: "Thogai Murugan Builders",
-    addressOne: "18, Kadai Veedhi, ",
-    addressTwo: " Sempadapalayam, Karur",
-    addressThree: "Tamil Nadu 639001",
-    contactOne: "94426-93171",
-    contactTwo: "97890-63333",
-    about: "About Us",
-    aboutContent:
-      "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
-      ourProjects:"Our Projects",
-      clickHere:"click here to explore our projects",
-      csr:"CSR",
-  };
+  founderHead: "FOUNDER OF THOGAI MURUGAN BUILDERS",
+  founderGoal:
+    "Achievements become routine if dreams are backed by the desire to reach them.",
+  founderName: "Shri.Thogai Murugan ",
+  founderPosition: "Founder, Thogai Murugan Builders",
+  mdName: "Mr.Santhose Murugan",
+  mdPosition: "MD, Thogai Murugan Builders",
+  visionHead: "Our Vision & Values",
+  vision:
+    ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
+  readMore: " Read More",
+  projectsHead: "THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES",
+  projectsOngoing: "OUR ONGOING PROJECTS",
+  projectsOngoingdesc:
+    ' "Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.',
+  viewAll: " View All ➜",
+  projectsCompleted: "OUR COMPLETED PROJECTS",
+  projectsCompleteddesc:
+    ' "Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.',
+  managementHead: "THOGAI MURUGAN BUILDERS MANAGEMENTS",
+  managementGoal:
+    " Achievements become a routine if dreams are backed by the desir to reach them.",
+  bnameOne: "Shri.Thogai Murugan",
+  bpositionOne: "Founder",
+  bnameTwo: "Santhose Murugan",
+  bpositionTwo: " CHAIRMAN",
+  bnameThree: "Santhose Murugan",
+  bpositionThree: "MANAGING DIRECTOR",
+  bnameFour: "Santhose Murugan",
+  bpositionFour: "CEO",
+  bnameFive: "Santhose Murugan",
+  bpositionFive: "CTO",
+  ourGroup: "OUR GROUP OF COMPANIES",
+  contactUs: "CONTACT US",
+  submit: "Submit",
+  name: "Thogai Murugan Builders",
+  addressOne: "18, Kadai Veedhi, ",
+  addressTwo: " Sempadapalayam, Karur",
+  addressThree: "Tamil Nadu 639001",
+  contactOne: "94426-93171",
+  contactTwo: "97890-63333",
+  about: "About Us",
+  aboutContent:
+    "Founded in 2004 by the visionary entrepreneur Mr.Thogai Murugan, Thogai Murugan Builders is an eminent real estate conglomerate and one of the leading builders in Karur and around districts of karur. We are constantly expanding our footprint with innovative facades, exquisite dwellings and elevated lifestyle solutions in our Thogai Murugan Avenues at karur and around districts of karur. And our clientele spans thousands of happy residents and families in this beloved city.",
+  ourProjects: "Our Projects",
+  clickHere: "click here to explore our projects",
+  csr: "CSR",
+};
 
 const Delete = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-          {/*<section>
+        {/*<section>
           <div className="text-center pt-12 lg:pb-12 lg:px-20 px-3">
             <h5 className="text-xl font-bold">
               <FormattedMessage
@@ -348,7 +351,7 @@ const Delete = () => {
             </div>
           </div>
     </section>*/}
-     {/*<div className="lg:flex ">
+        {/*<div className="lg:flex ">
             <div className="lg:w-2/4 ">
               <div className="  lg:px-1 px-12 py-6">
               <img

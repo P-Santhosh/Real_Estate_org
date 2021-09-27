@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 
 import { IntlProvider, FormattedMessage } from "react-intl";
 const messagesInFrench = {
@@ -6,6 +6,9 @@ const messagesInFrench = {
   submit: "SUBMIT",
 };
 const Connectpro = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">

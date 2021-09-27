@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Footer from "./Footer";
 import Connect from "./Connect";
 const Blogone = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="text-center lg:pt-12 lg:pb-12 lg:px-20 ">
@@ -23,7 +26,7 @@ const Blogone = () => {
           suffer later. To avoid such scenarios here are some of basic things
           listed below to note before buying a property.
         </p>
-        
+
         <p className="text-xl font-semibold pt-5">Budget</p>
         <p>
           On buying a real estate property first thing is to choose the property
@@ -55,7 +58,7 @@ const Blogone = () => {
           defects.
         </p>
       </div>
-       <Connect></Connect>
+      <Connect></Connect>
       <Footer></Footer>
     </>
   );
