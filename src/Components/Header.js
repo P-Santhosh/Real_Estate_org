@@ -206,9 +206,7 @@ const Header = ({ toggle }) => {
           <Link to="/disclaimer" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
           </Link>
-          <Link to="/favicon" className="px-4 text-blue-900 hover:text-red-600 Link">
-            <FormattedMessage id=" disclaimer" defaultMessage=" Favicon" />
-          </Link>
+          
         </div>
       </nav>
     </IntlProvider>
