@@ -81,7 +81,7 @@ const Header = ({ toggle }) => {
   return (
     <IntlProvider messages={messagesInFrench} defaultLocale="en">
       <div className="navbar mt-72">
-      <div className="bg-black text-white px-3 py-5">
+      <div className="bg-black text-white lg:px-3 py-5">
             <p className="pb-2">
               <a href="tel:+9442693171" className="hover:text-green-600">
                 <svg
