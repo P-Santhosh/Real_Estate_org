@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
+import emailjs from "emailjs-com";
 const messagesInFrench = {
   munnurHead:
     "  THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES @  Munnur, Karur Paramathi ",
@@ -35,6 +36,18 @@ const Munnur = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+  function sendEmail(e){
+    e.preventDefault();
+ 
+   emailjs.sendForm('Gmail' ,'template_tw3qtjp',  e.target, "user_Wdd2WV1TPRjr521IUFnNb")
+ 
+   .then(function(res){
+     console.log("success", res.status);
+   },(error) => {
+     console.log(error.text)
+   });
+   e.target.reset()
+ }
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -191,11 +204,12 @@ const Munnur = () => {
               <p className="text-xl font-bold  text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
                 <FormattedMessage id="contactUs" defaultMessage="CONTACT US" />
               </p>
-              <form className="px-3 mt-12">
+              <form className="px-3 mt-12" onSubmit={sendEmail}>
                 <label>
                   <input
                     type="text"
                     placeholder=" Name *"
+                    name = "name" 
                     className="rounded border hover:border-blue-600   w-11/12 px-5 mb-4 p-2 "
                   />
                 </label>
@@ -204,6 +218,8 @@ const Munnur = () => {
                   <input
                     type="email"
                     placeholder=" Email "
+                    name = "email"
+                    name = "phone number"
                     className="rounded border hover:border-blue-600  w-11/12 px-5 mb-4 p-2"
                   />
                 </label>
@@ -221,6 +237,7 @@ const Munnur = () => {
                     class="rounded form-textarea border hover:border-blue-600  lg:w-8/9 w-11/12 px-5 mb-4 p-2"
                     rows="6"
                     placeholder="Message"
+                    name = "message"
                   ></textarea>
                 </label>
                 <button

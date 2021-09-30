@@ -1,5 +1,6 @@
 import { React, useEffect } from "react";
 import { IntlProvider, FormattedMessage } from "react-intl";
+import emailjs from "emailjs-com";
 const messagesInFrench = {
   contactUs: "CONTACT US",
   submit: "SUBMIT",
@@ -14,6 +15,18 @@ const Connect = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+  function sendEmail(e){
+    e.preventDefault();
+ 
+   emailjs.sendForm('Gmail' ,'template_tw3qtjp',  e.target, "user_Wdd2WV1TPRjr521IUFnNb")
+ 
+   .then(function(res){
+     console.log("success", res.status);
+   },(error) => {
+     console.log(error.text)
+   });
+   e.target.reset()
+ }
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -26,11 +39,12 @@ const Connect = () => {
           <div className="lg:flex lg:py-12 lg:pb-24 pb-12 ">
             <div className="lg:w-2/4 ">
               <div className=" lg:pl-56 pl-8">
-                <form>
+                <form onSubmit={sendEmail}> 
                   <label>
                     <input
                       type="text"
                       placeholder=" Name *"
+                      name = "name"
                       className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-10 px-5 py-3"
                     />
                   </label>
@@ -39,6 +53,7 @@ const Connect = () => {
                     <input
                       type="email"
                       placeholder="Email "
+                      name = "email"
                       className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-10 px-5  py-3"
                     />
                   </label>
@@ -47,6 +62,7 @@ const Connect = () => {
                     <input
                       type="text"
                       placeholder=" Phone Number *"
+                      name = "phone number"
                       className="rounded border hover:border-blue-600 lg:w-3/4  w-11/12 mt-5 lg:px-10 px-5 py-3"
                     />
                   </label>
@@ -56,6 +72,7 @@ const Connect = () => {
                       class=" rounded form-textarea border hover:border-blue-600 lg:px-10 px-5 py-3 mt-5 lg:w-3/4  w-11/12"
                       rows="4"
                       placeholder="Message"
+                      name = "message"
                     ></textarea>
                   </label>
                   <button
