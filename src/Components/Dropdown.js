@@ -49,6 +49,7 @@ const Dropdown = ({ isOpen, toggle }) => {
         <Link to="/disclaimer" className="p-4 hover:text-red-600  Link">
           <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
         </Link>
+        <Link><a href="tel:+9442693171">📞 </a></Link>
       </div>
     </IntlProvider>
   );

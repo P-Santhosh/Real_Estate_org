@@ -57,7 +57,8 @@ export default Header;*/
 import React from "react";
 import { Link } from "react-router-dom";
 import { IntlProvider, FormattedMessage } from "react-intl";
-import { FiFacebook, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiLinkedin, FiInstagram  } from "react-icons/fi";
+import { VscCallOutgoing } from "react-icons/vsc";
 const messagesInFrench = {
   name: "Thogai Murugan Builders",
   addressOne: "18, Kadai Veedhi, sempadapalayam",
@@ -76,6 +77,7 @@ const messagesInFrench = {
   contact: " Contact Us",
   disclaimer: "Disclaimer",
   csr:"CSR",
+  booking:"Booking",
 };
 const Header = ({ toggle }) => {
   return (
@@ -150,6 +152,7 @@ const Header = ({ toggle }) => {
               >
                 {" "}
                 <FiInstagram />{" "}
+               
               </a>
             </p>
           </div>
@@ -197,6 +200,9 @@ const Header = ({ toggle }) => {
           {/*<Link to="/csr" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="csr" defaultMessage="CSR " />
   </Link>*/}
+           <Link to="/bookmyplot" className="px-4 text-blue-900 hover:text-red-600 Link">
+            <FormattedMessage id="booking" defaultMessage="Booking" />
+          </Link>
           <Link to="/gallery" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id="gallery" defaultMessage="Gallery" />
           </Link>
@@ -206,7 +212,7 @@ const Header = ({ toggle }) => {
           <Link to="/disclaimer" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
           </Link>
-          
+        <a href="tel:+9442693171">📞 </a>
         </div>
       </nav>
     </IntlProvider>
