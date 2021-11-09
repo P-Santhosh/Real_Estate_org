@@ -40,7 +40,7 @@ const Dropdown = ({ isOpen, toggle }) => {
         {/* <Link to="/csr" className="p-4 hover:text-red-600  Link">
             <FormattedMessage id="csr" defaultMessage="CSR " />
       </Link>*/}
-          <Link to="//bookmyplot" className="p-4 hover:text-red-600  Link">
+          <Link to="/bookmyplot" className="p-4 hover:text-red-600  Link">
           <FormattedMessage id="booking" defaultMessage="Booking" />
         </Link>
         <Link to="/gallery" className="p-4 hover:text-red-600  Link">

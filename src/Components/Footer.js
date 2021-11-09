@@ -21,6 +21,7 @@ const messagesInFrench = {
   contact: " Contact",
   disclaimer: "Disclaimer",
   csr: "CSR",
+  booking:"Booking",
 };
 class Footer extends React.Component {
   render() {
@@ -67,6 +68,11 @@ class Footer extends React.Component {
                     <FormattedMessage id="csr" defaultMessage="CSR " />
                   </Link>
                 </p>*/}
+                <p>
+                  <Link to="/bookmyplot" className="px-4 hover:text-red-600">
+                    <FormattedMessage id="booking" defaultMessage="Booking" />
+                  </Link>
+                </p>
                 <p>
                   <Link to="/gallery" className="px-4 hover:text-red-600">
                     <FormattedMessage id="gallery" defaultMessage="Gallery" />
