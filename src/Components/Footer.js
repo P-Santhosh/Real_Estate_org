@@ -148,7 +148,7 @@ class Footer extends React.Component {
                     />
                   </svg>
                   <p className="mb-2 font-medium items-end ">
-                    <a href="tel:+9442693171">
+                    <a href="tel:9442693171">
                       &nbsp;&nbsp;&nbsp;
                       <FormattedMessage
                         id="contactOne"
@@ -185,7 +185,7 @@ class Footer extends React.Component {
           </section>
           <div className="flex lg:px-96 lg:mx-40 px-20 lg:pb-0 pb-2 lg:py-3">
             <p className="lg:px-6 px-3">
-              <a href="tel:+9442693171" className="hover:text-green-600">
+              <a href="tel:9442693171" className="hover:text-green-600">
                 <svg
                   className="w-6 h-6 "
                   fill="none"
@@ -258,7 +258,7 @@ class Footer extends React.Component {
           <hr></hr>
           <div className=" font-bold ">
             <p className=" lg:pt-5 pt-2  text-lg ">
-              <a href="tel:+0444-627-6233" className="hover:text-green-600">
+              <a href="tel:04446276233" className="hover:text-green-600">
                 {" "}
                 Toll Free&nbsp; @&nbsp; 0444-627-6233{" "}
               </a>

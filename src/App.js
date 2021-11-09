@@ -41,6 +41,7 @@ import Munnurtwo from "./Components/Munnurtwo";
 import Koodacheri from "./Components/Koodacheri";
 import Favicon from "./Components/Favicon";
 import Booking from "./Components/Booking";
+import Submit from "./Components/Submit";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,6 +93,7 @@ function App() {
             <Route path="/blogtwo" component={Blogtwo} />
             <Route path="/favicon" component={Favicon} />
             <Route path="/bookmyplot" component={Booking} />
+            <Route path="/plotbooked" component={Submit} />
           </Switch>
         </div>
       </Router>

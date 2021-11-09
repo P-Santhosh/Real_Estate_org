@@ -84,7 +84,7 @@ const Contact = () => {
 
               <p className="mb-1  ">
                 &nbsp;&nbsp;&nbsp;
-                <a href="tel:+9442693171">
+                <a href="tel:9442693171">
                   <FormattedMessage
                     id="contactOne"
                     defaultMessage="94426-93171 "

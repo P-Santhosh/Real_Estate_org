@@ -85,7 +85,7 @@ const Header = ({ toggle }) => {
       <div className="navbar mt-72">
       <div className="bg-black text-white lg:px-3 py-5 ">
             <p className="pb-2">
-              <a href="tel:+9442693171" className="hover:text-green-600  ">
+              <a href="tel:9442693171" className="hover:text-green-600  ">
                 <svg 
                   className="w-6 h-6 "
                   fill="none"
@@ -212,7 +212,7 @@ const Header = ({ toggle }) => {
           <Link to="/disclaimer" className="px-4 text-blue-900 hover:text-red-600 Link">
             <FormattedMessage id=" disclaimer" defaultMessage=" Disclaimer" />
           </Link>
-        <a href="tel:+9442693171">📞 </a>
+        <a href="tel:9442693171">📞 </a>
         </div>
       </nav>
     </IntlProvider>

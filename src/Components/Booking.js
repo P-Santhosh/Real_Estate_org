@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import { ImLocation2} from "react-icons/im";
 import emailjs from "emailjs-com";
-
+import { Link } from "react-router-dom";
 const messagesInFrench = {
   munnurHead:
     "  THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES @  Munnur, Karur Paramathi ",
@@ -100,8 +100,8 @@ const Booking = () => {
                   />
                 </label>
                 <br />
-             
-                <button  onClick={handleClick}
+                <Link to="/plotbooked">
+                <button  
                   className="rounded-full border-4 lg:px-16 px-6 py-2 font-bold
       text-sm bg-blue-400 border-blue-600 lg:w-3/4 w-11/12 mt-5  lg:ml-8 hover:bg-white"
                 >
@@ -109,16 +109,16 @@ const Booking = () => {
                     {" "}
                     <FormattedMessage id="bookmyplot" defaultMessage="BOOK MY PLOT" />
                   </b>
-                </button>
+                </button></Link>
                 <br />
                
               </form>
             </div>
             
         <Bannerone />
-        <section className="lg:px-12">
+        <section className="lg:px-12 ">
           <div className="lg:flex pt-20 pb-5">
-            <div className="lg:w-6/12 px-6">
+            <div className="lg:w-11/12 px-6 lg:pl-20">
               <p className="text-3xl text-blue-900 ">
                 <FormattedMessage
                   id="propertyDetails"
@@ -132,7 +132,7 @@ const Booking = () => {
                   defaultMessage="PROPERTY FEATURES"
                 />
               </p>
-              <div className="lg:pl-56 py-2 lg:text-xl text-base py-5 lg:pt-10 lg:leading-9">
+              <div className="lg:ml-96 lg:pl-28 pl-20 py-2 lg:text-xl text-base py-5 lg:pt-10 lg:leading-9">
                 <ul>
                   <li className="list-disc">
                     <FormattedMessage
@@ -179,7 +179,7 @@ const Booking = () => {
                 </ul>
               </div>
             </div>
-            <div className="lg:w-6/12 px-3 lg:pt-10">
+            {/*<div className="lg:w-6/12 px-3 lg:pt-10">
               <p className="text-xl font-bold  text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
                 <FormattedMessage id="booking" defaultMessage="Booking " />
               </p>
@@ -224,22 +224,22 @@ const Booking = () => {
                 <br />
                
               </form>
-            </div>
+        </div>*/}
           </div>
         </section>
-        <div className="lg:px-56 px-6 pb-10  text-gray-900 text-center">
+        {/*<div className="lg:px-56 px-6 pb-10  text-gray-900 text-center">
             <p
               className="rounded-full  lg:px-20 lg:px-6 px-2    py-3 font-bold
        text-sm bg-green-400 border-green-600  hover:bg-green-900 hover:border-green-100  hover:text-white"
             >
           <p className="  text-lg  ">
-              <a href="tel:+0444-627-6233" className="hover:text-green-100 ">
+              <a href="tel:04446276233" className="hover:text-green-100 ">
                 {" "}
                 📞   Toll Free&nbsp; @&nbsp; 0444-627-6233{" "}
               </a>
             </p>
             </p>
-          </div>
+      </div>*/}
         <Footer />
       </IntlProvider>
     </>
