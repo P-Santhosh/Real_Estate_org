@@ -16,10 +16,23 @@ const Submit = () => {
       <div className="lg:ml-96 lg:pl-56 px-12 lg:pt-10 ">
         <img alt="..." src="/img/banner.jpg" />
       </div>
-      <div className="lg:px-32 lg:pb-32 pb-10 font-bold  px-6 text-center lg:text-2xl">
+      <div className="lg:px-32 lg:pb-8 pb-5 font-bold  px-6 text-center lg:text-2xl">
           <p>Thank you for booking a plot at Thogai Murugan Avenue.</p>
           <p>We will call you back soon.</p>
         </div>
+        <div className="lg:px-96 lg:mx-32 px-3 lg:pb-20 pb-8 lg:pt-5 text-gray-900 text-center">
+            <p
+              className="rounded-lg   lg:px-20 lg:px-6 px-1    py-3 font-bold
+       text-sm bg-green-400 border-green-600  hover:bg-green-900 hover:border-green-100  hover:text-white"
+            >
+          <p className="  text-lg  ">
+              <a href="tel:04446276233" className="hover:text-green-100 ">
+                {" "}
+                📞 Call now @  0444-627-6233 📞{" "}
+              </a>
+            </p>
+            </p>
+      </div>
       <Footer></Footer>
     </>
   );

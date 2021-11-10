@@ -59,7 +59,20 @@ const Booking = () => {
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
-        <div className="text-center pt-12 pb-3 lg:px-20 ">
+      <div className="lg:px-96 lg:mx-32 px-3  pt-5 text-gray-900 text-center">
+            <p
+              className="rounded-lg   lg:px-20 lg:px-6 px-1    py-3 font-bold
+       text-sm bg-green-400 border-green-600  hover:bg-green-900 hover:border-green-100  hover:text-white"
+            >
+          <p className="  text-lg  ">
+              <a href="tel:04446276233" className="hover:text-green-100 ">
+                {" "}
+                📞 Call now @  0444-627-6233 📞{" "}
+              </a>
+            </p>
+            </p>
+      </div>
+        <div className="text-center pt-3 pb-3 lg:px-20 ">
           <div className="lg:text-5xl text-xl font-bold    bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
               <p>தோகைமுருகன் அவன்யூ</p>
           {/*<p className="flex item-center font-semibold"> <ImLocation2 />அரவக்குறிச்சி </p>

@@ -8,7 +8,7 @@ const messagesInFrench = {
   addressOne: "18, Kadai Veedhi ",
   addressTwo: " Sempadapalayam, Karur",
   addressThree: "Tamil Nadu 639001",
-  contactOne: "94426-93171",
+  contactOne: "0444-627-6233",
   contactTwo: "97890-63333",
 };
 const Connect = () => {
@@ -152,10 +152,10 @@ const Connect = () => {
                   </svg>
                   <p className="mb-2">
                     &nbsp;&nbsp;&nbsp;
-                    <a href="tel:9442693171">
+                    <a href="tel:04446276233">
                       <FormattedMessage
                         id="contactOne"
-                        defaultMessage="94426-93171 "
+                        defaultMessage="0444-627-6233 "
                       />
                     </a>
                   </p>
