@@ -104,10 +104,10 @@ const Booking = () => {
           </div>
         </div>
         <div className="text-center ">
-          <p className="lg:text-2xl text-lg font-bold ">📢 &nbsp;கரூர் மாநகராட்சியின் மாபெரும்&nbsp; 📢 </p>
+          <p className="lg:text-2xl text-sm font-bold ">📢 &nbsp;கரூர் மாநகராட்சியின் மாபெரும்&nbsp; 📢 </p>
           <p className="lg:text-5xl text-xl font-bold pt-3 text-blue-900">PLOT மேளா&nbsp;!!!</p>
         </div>
-        <div className="lg:mx-56 lg:px-56 px-6  lg:pt-10 pb-10">
+        <div className="lg:mx-56 lg:px-56 px-6  lg:pt-10 pt-3 pb-10">
               <div className="lg:text-xl  text-sm flex font-bold lg:pl-32 pl-8 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
               <div className=" flex font-semibold"> <ImLocation2 /><p>அரவக்குறிச்சி</p> </div>
               <div className="flex  font-semibold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ImLocation2 /><p>க.பரமத்தி</p> </div>
