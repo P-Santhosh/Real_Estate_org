@@ -1,10 +1,17 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import Bannerone from "./Bannerone";
 import Footer from "./Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import { ImLocation2} from "react-icons/im";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
 const messagesInFrench = {
   munnurHead:
     "  THOGAI MURUGAN BUILDERS PRESENTS THE THOGAI MURUGAN AVENUES @  Munnur, Karur Paramathi ",
@@ -37,6 +44,9 @@ const messagesInFrench = {
   bookmyplot:"BOOK MY PLOT"
 };
 const Booking = () => {
+
+  //const [phone, setPhone] = useState("");
+  const history = useHistory();
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -51,11 +61,25 @@ const Booking = () => {
      console.log(error.text)
    });
    e.target.reset()
+   history.push({
+    pathname:  "/plotbooked",
+     
+ });
  }
- function handleClick(e){
-   alert(" Your booking is successfully sumbited and We will contact with in two days.");
+//  function handleClick(e){
+
   
- }
+//   if(phone.length != "0"){
+//     setPhone(phone);
+//   }
+//     else{
+//       alert("please enter the phone number");
+//     }
+//   }
+  
+ 
+
+
   return (
     <>
       <IntlProvider messages={messagesInFrench} defaultLocale="en">
@@ -79,8 +103,12 @@ const Booking = () => {
           <p className="flex item-center"> <ImLocation2 />க.பரமத்தி </p>*/}
           </div>
         </div>
+        <div className="text-center ">
+          <p className="lg:text-2xl text-lg font-bold ">📢 &nbsp;கரூர் மாநகராட்சியின் மாபெரும்&nbsp; 📢 </p>
+          <p className="lg:text-5xl text-xl font-bold pt-3 text-blue-900">PLOT மேளா&nbsp;!!!</p>
+        </div>
         <div className="lg:mx-56 lg:px-56 px-6  lg:pt-10 pb-10">
-              <div className="lg:text-xl  text-sm flex font-bold lg:pl-24 pl-6 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
+              <div className="lg:text-xl  text-sm flex font-bold lg:pl-32 pl-8 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 py-4">
               <div className=" flex font-semibold"> <ImLocation2 /><p>அரவக்குறிச்சி</p> </div>
               <div className="flex  font-semibold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ImLocation2 /><p>க.பரமத்தி</p> </div>
              
@@ -92,6 +120,7 @@ const Booking = () => {
                     placeholder=" Name "
                     name = "name" 
                     className="rounded border hover:border-blue-600  border-blue-900  w-11/12 px-5 mb-4 p-2 "
+                    required
                   />
                 </label>
                 <br />
@@ -100,29 +129,34 @@ const Booking = () => {
                     type="email"
                     placeholder=" Email "
                     name = "email"
-                    name = "phone number"
                     className="rounded border hover:border-blue-600   border-blue-900 w-11/12 px-5 mb-4 p-2"
+                    
                   />
                 </label>
                 <br />
                 <label>
                   <input
                     type="text"
-                    placeholder=" Phone Number "
+                    placeholder=" Phone Number *"
+                    name = "phone number"
                     className="rounded border hover:border-blue-600  border-blue-900  w-11/12 px-5 mb-4 p-2"
+                    required
+                   minLength="10"
+                   maxLength="10"
                   />
                 </label>
                 <br />
-                <Link to="/plotbooked">
+               
                 <button  
-                  className="rounded-full border-4 lg:px-16 px-6 py-2 font-bold
-      text-sm bg-blue-400 border-blue-600 lg:w-3/4 w-11/12 mt-5  lg:ml-8 hover:bg-white"
+                  className="rounded-full border-4 lg:px-5 px-6 py-2 font-bold
+      text-sm bg-blue-400 border-blue-600 lg:w-5/12 w-11/12 mt-5  lg:ml-36 hover:bg-white"
+      
                 >
                   <b>
                     {" "}
                     <FormattedMessage id="bookmyplot" defaultMessage="BOOK MY PLOT" />
                   </b>
-                </button></Link>
+                </button>
                 <br />
                
               </form>
@@ -259,4 +293,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default  withRouter(Booking);
