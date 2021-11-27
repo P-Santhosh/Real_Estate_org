@@ -13,7 +13,7 @@ const messagesInFrench = {
   ceoPosition: "MD, Thogai Murugan Builders",
   visionHead: "Our Vision & Values",
   vision:
-    ' "Thogai Murugan Builders brings a host of capabilities to majorprojects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
+    ' "Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans the life cycle of infrastructure to professional & support services". Today, the company is a leader and a trendsetter in the constructionindustry, delivering custom-designed turnkey projects to governmentagencies, large corporations and private bodies.',
   visionOne:
     "  Ethical business practices to be a responsible corporate body by committing to enhance",
   visionTwo: "2 ) Collaborative and creative work environment ",
@@ -190,7 +190,7 @@ const About = () => {
           <p className="pt-3">
             <FormattedMessage
               id=" vision"
-              defaultMessage='"Thogai Murugan Builders brings a host of capabilities to majorinfrastructure projects through an integrated approach that spans thelife cycle of infrastructure to professional & support services".
+              defaultMessage='"Thogai Murugan Builders brings a host of capabilities to major infrastructure projects through an integrated approach that spans thelife cycle of infrastructure to professional & support services".
                 Today, the company is a leader and a trendsetter in the construction industry, delivering custom-designed turnkey projects to government agencies, large corporations and private bodies.'
             />
           </p>
